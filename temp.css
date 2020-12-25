@@ -20,7 +20,6 @@
 	box-sizing: border-box;
 }
 
-
 .heading{
     font-size: 30px;
     font-weight: 700;
@@ -48,6 +47,22 @@ a{
 	text-decoration: none;
 }
 
+/* ADD THIS CLASS TO CONVERT A GIVEN LINK TO A BUTTON BECAUSR */
+.toButton{
+    text-align: center;
+    display: inline-block;
+    padding: 12px;
+    margin-top: 10px;
+    margin-right: auto;
+    border-radius: 1.2rem;
+    background: var(--buttonBlue);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: var(--textWhite);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+
+}
 button{
     margin-top: 13px;
     background: var(--buttonBlue);
@@ -74,7 +89,12 @@ button:hover, button:focus {
     box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
 }
 
-
+.conteiner{
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
 
 /*********************LANDING PAGE SECTION**************************/
 
@@ -138,7 +158,7 @@ button:hover, button:focus {
 	opacity: 0.9;
 }
 
-#landingPageSection #container{
+#landingPageSection .conteiner{
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
@@ -235,9 +255,9 @@ button:hover, button:focus {
     margin-bottom: 22px;
 }
 
-#aboutUsSection .container{
-    width: 80%;
-    max-width: 1100px;
+#aboutUsSection .conteiner{
+    width: 90%;
+    max-width: 1400px;
     margin: 0px  auto;
 }
 
@@ -319,10 +339,10 @@ button:hover, button:focus {
     text-align: left;
 }
 
-#aboutUsSection #cards .container{
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
+#aboutUsSection #cards .conteiner{
+    width: 80%;
+    max-width: 1400px;
+    margin: 0px auto;
 }
 
 #aboutUsSection #cards .grid{
@@ -376,7 +396,7 @@ button:hover, button:focus {
     }
 }
 
-#technologiesSection .container{
+#technologiesSection .conteiner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,19 +455,21 @@ button:hover, button:focus {
 	background: var(--backgroundGray);
 }
 
-#teamSection .container{
+#teamSection .conteiner{
 	position: relative;
 	z-index: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin: 40px 0;
+    /* margin: 40px 0; UNCOMMENTING THIS LINE WOULD DESTROY THE ALIGNMENT OF THIS SECTION
+    REASON:THE CUSTOM CONTAINER CLASS NAMED AS CONTEINER ALREADY HAS MARGIN:0 AUTO
+    */
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-#teamSection .container .card{
+#teamSection .conteiner .card{
 	position: relative;
 	width: 300px;
 	height: 400px;
@@ -461,11 +483,11 @@ button:hover, button:focus {
 	backdrop-filter: blur(10px);
 }
 
-#teamSection .container .card:hover{
+#teamSection .conteiner .card:hover{
 	box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
 }
 
-#teamSection .container .card .content{
+#teamSection .conteiner .card .content{
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -475,12 +497,12 @@ button:hover, button:focus {
 	transition: 0.5s;
 }
 
-#teamSection .container .card:hover .content{
+#teamSection .conteiner .card:hover .content{
 	opacity: 1;
 	transform: translateY(-20px);
 }
 
-#teamSection .container .card .content .imgBx{
+#teamSection .conteiner .card .content .imgBx{
 	position: relative;
 	width: 150px;
 	height: 150px;
@@ -489,7 +511,7 @@ button:hover, button:focus {
 	border: 4px solid rgba(0,0,0,0.25);
 }
 
-#teamSection .container .card .content .imgBx img{
+#teamSection .conteiner .card .content .imgBx img{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -498,7 +520,7 @@ button:hover, button:focus {
 	object-fit: cover;
 }
 
-#teamSection .container .card .content .contentBx h3{
+#teamSection .conteiner .card .content .contentBx h3{
 	color: #000;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -509,19 +531,19 @@ button:hover, button:focus {
 	line-height: 1.1em;
 }
 
-#teamSection .container .card .content .contentBx h3 span{
+#teamSection .conteiner .card .content .contentBx h3 span{
 	font-size: 12px;
 	font-weight: 500;
 	text-transform: initial;
 }
 
-#teamSection .container .card .sci{
+#teamSection .conteiner .card .sci{
 	position: absolute;
 	bottom: 50px;
 	display: flex;
 }
 
-#teamSection .container .card .sci li{
+#teamSection .conteiner .card .sci li{
 	list-style: none;
 	margin: 0 10px;
 	transform: translateY(40px);
@@ -530,12 +552,12 @@ button:hover, button:focus {
 	transition-delay: calc(0.1s * var(--i));
 }
 
-#teamSection .container .card:hover .sci li{
+#teamSection .conteiner .card:hover .sci li{
 	transform: translateY(0px);
 	opacity: 1;
 }
 
-#teamSection .container .card .sci li a{
+#teamSection .conteiner .card .sci li a{
 	color: #000;
 }
 
