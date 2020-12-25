@@ -10,6 +10,10 @@
     --marginTop:20px;
 }
 
+html{
+    overflow-x:hidden; 
+    scroll-behavior: smooth; /* Enables smooth scrolling of the page  */
+}
 
 /*********************COMMON STYLES*********************/
 
@@ -155,7 +159,8 @@ button:hover, button:focus {
 } */
 
 #landingPageSection #header nav a:hover{
-	opacity: 0.9;
+    opacity: 0.9;
+    color:var(--buttonHover);
 }
 
 #landingPageSection .conteiner{
