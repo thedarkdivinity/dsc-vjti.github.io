@@ -764,7 +764,7 @@ footer {
 }
 
 .footer-distributed .footer-left {
-    width: 40%;
+    width: 18%;
 }
 
 .footer-distributed h3 {
@@ -800,7 +800,7 @@ footer {
 
 
 .footer-distributed .footer-center {
-    width: 35%;
+    width: 30%;
 }
 
 .footer-distributed .footer-center i {
@@ -882,6 +882,15 @@ footer {
     margin-bottom: 5px;
 }
 
+.centre{
+    width: 100%;
+    margin: 0 19cm 0 19cm;
+}
+
+.footerimg {
+    width: 8cm;
+    height: 4.5cm;
+}
 
 @media (max-width: 880px) {
 
