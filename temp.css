@@ -8,6 +8,10 @@
     --textGray:#637282;
     --textWhite:#FFFFFF;
     --marginTop:20px;
+    --googleGreen:#3cba54;
+    --googleYellow:#f4c20d;
+    --googleRed:#db3236;
+    --googleBlue:#4885ed;
 }
 
 html{
@@ -31,6 +35,7 @@ html{
     font-weight: 700;
     line-height: 1.44;
     letter-spacing: -0.3px;
+    text-transform: capitalize;
     color: var(--textBlack);
     margin: 0px;
     margin-bottom: 0px;
@@ -52,7 +57,20 @@ html{
 a{
 	text-decoration: none;
 }
-
+.googleBlue
+{
+    color: var(--googleBlue);
+}
+.googleYellow
+{
+    color: var(--googleYellow);
+}
+.googleRed{
+    color: var(--googleRed);
+}
+.googleGreen{
+    color: var(--googleGreen);
+}
 /* ADD THIS CLASS TO CONVERT A GIVEN LINK TO A BUTTON BECAUSR */
 .toButton{
     text-align: center;
@@ -60,7 +78,7 @@ a{
     padding: 12px;
     margin-top: 10px;
     margin-right: auto;
-    border-radius: 1.2rem;
+    border-radius: 999px;
     background: var(--buttonBlue);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     color: var(--textWhite);
@@ -101,6 +119,15 @@ button:hover, button:focus {
     max-width: 1400px;
     margin: 0 auto;
     overflow-x: hidden;
+}
+.sandEffect{
+    background-image: url('sand.jpg');
+    color: transparent;
+    background-clip: text;
+    background-color: transparent;
+}
+.grid{
+    display: grid;
 }
 
 /*********************LANDING PAGE SECTION**************************/
@@ -226,12 +253,7 @@ button:hover, button:focus {
 	color: #FFF;
 	background-color:#007BFF;
 	
-	padding: 20px 0px;
-	border-radius: 7px; 
-	font-size: 16px;
-	width: 160px;
-	margin-top: 30px;
-	cursor: pointer;
+	padding: 20px 0px;twoColumnsOnDesktop
 	box-shadow: 0 13px 27px 0 rgba(211, 211, 211, 0.5)
 }
 
@@ -579,7 +601,31 @@ button:hover, button:focus {
 #teamSection .conteiner .card .sci li a{
 	color: #000;
 }
-
+/* STATS SECTION */
+#stats{
+    margin-bottom: 20px;
+}
+.statsHeading :nth-child(1){
+    color: var(--googleBlue);
+}
+.statsCard{
+    background-color: var(--backgroundWhite);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(99, 114, 130, 0.3);
+    margin: 10px;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition-property: all;
+}
+.statsCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(99, 114, 130, 0.3);
+}
+.fourColumnsOnDesktop{
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
 
 /*********************CONTACT US SECTION*********************/
 #contactUsSection {
@@ -958,4 +1004,10 @@ footer {
         font-size: auto;
     }
 
+}
+@media(max-width:720px){
+    .twoColumsOnMobile{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
 }

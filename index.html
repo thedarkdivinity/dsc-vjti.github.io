@@ -8,10 +8,20 @@
 	<meta name="keywords" content="footer, address, phone, icons" />
 	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> 
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> 
+	
     <link rel="stylesheet" href="temp.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script type="text/javascript" src="message.js"></script>
+   
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+<script>$('#count').counterUp({
+	delay:12,
+	duration:10000
+
+  });</script>
+	<script type="text/javascript" src="message.js"></script>
     <title>DSC VJTI</title>
 </head>
 
@@ -47,7 +57,7 @@
 
 		<div class="conteiner">
 			<div id="content-container">
-				<h2>Hello <p><span class="txt-rotate"
+				<h2 class="sandEffect">Hello <p><span class="txt-rotate"
 					data-period="2000"
 					data-rotate='[ "Developers", "Hackers", "Programmers", "Technophiles" ]'></span></p></h2>
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -88,7 +98,7 @@
     	</div>
     
     	<div class="conteiner mt-5">
-    		<div class="grid twoColumnsOnDesktop " class="aboutUsWriteup">
+    		<div class="grid twoColumnsOnDesktop  " class="aboutUsWriteup">
 		        <div class="aboutUsRightColumn">
 		            <h3 class="mt-5 sectional_heading">About VJTI</h3>
 		            <div class="aboutusRightPara">
@@ -133,9 +143,39 @@
     </section>
 
 
+<!--STATS-->
+<section id="stats">
+	<h1 class="text_center heading">what we have</h1>
+	<div class="conteiner">
+<div class="grid fourColumnsOnDesktop twoColumsOnMobile">
+	<div class="statsCard">
+		
+		<h1 class="heading statsHeading googleBlue" id="count">15</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+	</div>
+	<div class="statsCard">
+		
+		<h1 class="heading statsHeading googleRed" id="count">25</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+	</div>
+	<div class="statsCard">
+		
+		<h1 class="heading statsHeading googleYellow" id="count">35</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+	</div>
+	<div class="statsCard">
+		
+		<h1 class="heading statsHeading googleGreen" id="count">15</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+	</div>
+</div>
 
+	</div>
+
+</section>
+<br>
     <section id="technologiesSection">
-		<h1 class="text_center heading">Technologies We're Excited About</h1>
+		<h1 class="text_center heading " style="margin-top: 20px;">Technologies We're Excited About</h1>
 		<p class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 
 		<div class="conteiner classAddedToFixMargin">
@@ -434,5 +474,6 @@
 			<p class="footer-company-name">DSC VJTI, Mumbai &copy; 2021</p>
 		</div>
 	</footer>
+	
 </body>
 </html>
