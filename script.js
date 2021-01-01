@@ -53,11 +53,3 @@ var TxtRotate = function(el, toRotate, period) {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 10) {
-      $('#navBar').addClass('floatingNav');
-  } else {
-      $('#navBar').removeClass('floatingNav');
-  }
-});
