@@ -16,7 +16,9 @@
     --marginTop:20px;
 }
 
-/*********************COMMON STYLES*********************/
+/**************************************************************
+                    COMMON STYLES
+**************************************************************/
 
 *{
 	margin: 0px;
@@ -75,14 +77,16 @@ button{
     font-weight:bold !important;
 }
 
-button:hover, button:focus {
+button:hover, button:focus{
     background-color: var(--buttonHover);
     color: var(--textWhite);
     box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
 }
 
 
-/*********************LANDING PAGE STYLES*********************/
+/**************************************************************
+                    LANDING PAGE STYLES
+**************************************************************/
 
 #landingPageSection #header{
 	position: fixed;
@@ -158,8 +162,46 @@ button:hover, button:focus {
 	height: 100%;
 }
 
+.arrow{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-bottom: 5px solid var(--textBlack);
+    border-right: 5px solid var(--textBlack);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
 
-/*********************ABOUT US SECTION STYLES*********************/
+
+/**************************************************************
+                    ABOUT US SECTION STYLES
+**************************************************************/
 
 #aboutUsSection .sectional_heading{
     font-size: 1.7em;
@@ -213,7 +255,9 @@ button:hover, button:focus {
 }
 
 
-/*********************TECHNOLOGIES SECTION STYLES*********************/
+/**************************************************************
+                    TECHNOLOGIES PAGE STYLES
+**************************************************************/
 
 #technologiesSection .box{
     background-color: #ffffff;
@@ -280,7 +324,11 @@ button:hover, button:focus {
     text-align: center;
 }
 
-/*********************OUR TEAM SECTION STYLES*********************/
+
+/**************************************************************
+                    OUR TEAM PAGE STYLES
+**************************************************************/
+
 #teamSection .container .card{
     position: relative;
     width: 300px;
@@ -374,7 +422,9 @@ button:hover, button:focus {
 }
 
 
-/*********************CONTACT US SECTION STYLES*********************/
+/**************************************************************
+                    CONTACT US PAGE STYLES
+**************************************************************/
 
 #contactUsSection .social a{
     padding: 20px;
@@ -464,7 +514,7 @@ button:hover, button:focus {
 
 #contactUsSection .c-inputs input:focus,
 #contactUsSection .c-inputs textarea:focus{
-    border: 1px solid rgba(255, 255, 252, 1.00);
+    border: 2px solid rgba(255, 255, 252, 1.00);
     transition: all ease 0.5s;
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -497,7 +547,10 @@ button:hover, button:focus {
 }
 
 
-/************************FOOTER SECTION STYLES*******************************/
+/**************************************************************
+                    FOOTER SECTION STYLES
+**************************************************************/
+
 #footerSection footer {
     position: static;
     bottom: 0;
@@ -617,7 +670,9 @@ button:hover, button:focus {
     margin-bottom: 5px;
 }
 
-/*********************CHANGES FOR DESKTOP VIEW*********************/
+/**************************************************************
+                    CHANGES FOR DESKTOP VIEW
+**************************************************************/
 
 @media (min-width: 992px) {
 	#landingPageSection, #aboutVJTI, #teamSection{
@@ -650,7 +705,10 @@ button:hover, button:focus {
 	}
 }
 
-/*********************CHANGES FOR MOBILE VIEW*********************/
+
+/**************************************************************
+                    CHANGES FOR MOBILE VIEW
+**************************************************************/
 
 @media (max-width: 991px) {
 	*{
@@ -669,6 +727,17 @@ button:hover, button:focus {
 	#landingPageSection #content-container button{
 		margin: auto;
 	}
+
+    .arrow{
+        position: absolute;
+        top:90%;
+        left: 50%;
+    }
+
+    .arrow span{
+        width: 18px;
+        height: 18px; 
+    }
 
 	#aboutUsSection{
 		text-align: center;
