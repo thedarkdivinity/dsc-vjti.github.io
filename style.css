@@ -560,14 +560,13 @@ button:hover, button:focus{
     background-color: var(--backgroundDarkGray);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
-    width: 100%;
-    text-align: left;
+    width: 100%;    
     font-weight: 600;
-    padding: 30px 20px;
+    padding: 30px 10px 30px 10px;
     margin-top: 80px;
 }
 
-#footerSection .footer-distributed h3{
+/*#footerSection .footer-distributed h3{
     color: var(--textWhite);
     font-size: 1.4em;
     font-weight: 600;
@@ -588,10 +587,15 @@ button:hover, button:focus{
 	font-size: 1em;
 
 }
+*/
+
+#footerSection .footer-distributed .footer-logo {
+    justify-content: center;
+}
 
 #footerSection .footer-distributed .footer-links{
     color: var(--textWhite);
-    margin: 20px 0;
+    margin:  0;
     padding: 0;
 }
 
@@ -601,7 +605,7 @@ button:hover, button:focus{
     color: var(--textWhite);
 }
 
-#footerSection .footer-distributed .center-section i{
+#footerSection .footer-distributed .address i{
     background-color: #33383b;
     color: #ffffff;
     font-size: 25px;
@@ -635,7 +639,7 @@ button:hover, button:focus{
 	text-decoration: none;
 }
 
-#footerSection .about-title{
+/*#footerSection .about-title{
 	color: var(--textWhite);
 	font-size: 1.3em;
 }
@@ -648,6 +652,11 @@ button:hover, button:focus{
     font-weight: normal;
     margin: 0;
 }
+*/
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
 
 .footer-distributed .footer-icons{
     margin-top: 15px;
@@ -658,7 +667,6 @@ button:hover, button:focus{
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: #33383b;
     border-radius: 2px;
 
     font-size: 20px;
@@ -668,6 +676,50 @@ button:hover, button:focus{
 
     margin-right: 3px;
     margin-bottom: 5px;
+}
+
+.footer-icons a:hover {
+    opacity: 0.7;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.linkedin {
+    background: #0e76a8;
+    color: white;
+}
+
+.github {
+    background: grey;
+    color: white;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.medium_social {
+    background: #000000;
+    color: white;
+}
+
+.slack {
+    background:grey;
+    color: white;
 }
 
 /**************************************************************
@@ -700,9 +752,8 @@ button:hover, button:focus{
 	}
 
 	#contactUsSection #contact{
-		margin-left: 80px;
-		margin-bottom: 45px;
-	}
+        justify-content: center;
+    }
 }
 
 
@@ -771,7 +822,14 @@ button:hover, button:focus{
     	text-align: center;
     }
 
-    #footerSection .footer-distributed .center-section{
-    	text-align: left;
+    #footerSection .footer-distributed .address{
+       /* margin-top: -4cm;
+        visibility: hidden; */
+        margin-bottom: 1cm;
+        text-align: center;
+    }
+
+    #footerSection .footer-distributed .icon-links {
+        margin-top: 1cm;
     }
 }
