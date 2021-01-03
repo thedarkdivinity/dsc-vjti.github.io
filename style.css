@@ -52,7 +52,7 @@ a{
     font-size: 1em;
     color: var(--textGray);
     line-height: 22px;
-    margin-top: 0px;
+    margin-top: -8px;
     letter-spacing: -0.1px; 
     text-align: center; 
 }
@@ -203,6 +203,10 @@ button:hover, button:focus{
                     ABOUT US SECTION STYLES
 **************************************************************/
 
+#aboutUsSection{
+    background-color: var(--backgroundGray);
+}
+
 #aboutUsSection .sectional_heading{
     font-size: 1.7em;
     font-weight: 600;
@@ -229,6 +233,7 @@ button:hover, button:focus{
 
 #aboutUsSection #stats{
 	margin-top: 50px;
+    background-color: var(--backgroundWhite); 
 	/*margin-bottom: 50px;*/
 }
 
@@ -258,6 +263,10 @@ button:hover, button:focus{
 /**************************************************************
                     TECHNOLOGIES PAGE STYLES
 **************************************************************/
+
+#technologiesSection{
+    background-color: var(--backgroundGray);
+}
 
 #technologiesSection .box{
     background-color: #ffffff;
@@ -433,6 +442,10 @@ button:hover, button:focus{
                     CONTACT US PAGE STYLES
 **************************************************************/
 
+#contactUsSection{
+    background-color: var(--backgroundGray); 
+}
+
 #contactUsSection .social a{
     padding: 20px;
     color: #7b7c7c;
@@ -581,31 +594,8 @@ button:hover, button:focus{
     width: 100%;    
     font-weight: 600;
     padding: 30px 10px 30px 10px;
-    margin-top: 80px;
+    /*margin-top: 80px;*/
 }
-
-/*#footerSection .footer-distributed h3{
-    color: var(--textWhite);
-    font-size: 1.4em;
-    font-weight: 600;
-}
-
-#footerSection .footer-distributed h6{
-    color: var(--textWhite);
-    font-size: 0.93em;
-    font-weight: 600;
-    letter-spacing: -0.3px;
-    margin-top: -10px;
-}
-
-#footerSection .footer-distributed p.footer-company-name{
-	color: var(--footerTextGray);
-	font-weight: 500;
-	letter-spacing: 0.1px;
-	font-size: 1em;
-
-}
-*/
 
 #footerSection .footer-distributed .footer-logo {
     margin: auto;
@@ -654,21 +644,6 @@ button:hover, button:focus{
 #footerSection .footer-distributed span.contact-info a:hover{
 	text-decoration: none;
 }
-
-/*#footerSection .about-title{
-	color: var(--textWhite);
-	font-size: 1.3em;
-}
-
-.footer-distributed .footer-company-about{
-    line-height: 20px;
-    color: var(--footerTextGray);
-    font-size: 0.93em;
-    letter-spacing: -0.2px;
-    font-weight: normal;
-    margin: 0;
-}
-*/
 
 /* Footer Right */
 
@@ -744,7 +719,7 @@ button:hover, button:focus{
 **************************************************************/
 
 @media (min-width: 992px) {
-	#landingPageSection, #aboutVJTI, #teamSection{
+	#landingPageSection{
 		height: 100vh;
 	}
 
@@ -757,16 +732,25 @@ button:hover, button:focus{
 	}
 
 	#aboutDSC{
-		height: 79vh;
+		height: 70vh;
 	}
 
-	#aboutUsSection{
-		margin-bottom: 40px;
+    #aboutVJTI{
+        height: 60vh;
+    }
+
+	#aboutUsSection, #technologiesSection, #teamSection{
+        padding-top: 25px;
+		padding-bottom: 25px;
 	}
 
-	#technologiesSection{
-		margin-bottom: 60px;
-	}
+    #contactUsSection{
+        padding: 40px 0;
+    }
+
+    #aboutUsSection #stats{
+        padding: 50px 0;
+    }
 
 	#contactUsSection #contact{
         justify-content: center;
@@ -807,6 +791,19 @@ button:hover, button:focus{
 		margin: auto;
 	}
 
+    #aboutUsSection, #technologiesSection{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #teamSection, #contactUsSection{
+        padding: 40px 0;
+    }
+
+    #aboutUsSection #stats{
+        padding: 40px 0;
+    }
+
     .arrow{
         position: absolute;
         top:90%;
@@ -820,6 +817,7 @@ button:hover, button:focus{
 
 	#aboutUsSection{
 		text-align: center;
+        padding-top: 20px; 
 	}
 
 	#aboutUsSection button{
