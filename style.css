@@ -749,6 +749,8 @@ button:hover, button:focus{
 
     .footer-distributed .footer-right {
         margin: auto;
+        margin-right: 1cm;
+        margin-top: 0.6cm;
     }
 }
 
