@@ -328,6 +328,13 @@ button:hover, button:focus{
 /**************************************************************
                     OUR TEAM PAGE STYLES
 **************************************************************/
+#teamSection .container .nav-item:hover{
+    background-color:rgba(0, 110, 255, 0.4);
+    border-radius:5px;
+}
+#teamSection .container .nav-link:focus{
+    background-color:rgba(0, 110, 255, 0.4);
+}
 
 #teamSection .container .card{
     position: relative;
@@ -546,6 +553,17 @@ button:hover, button:focus{
     border: 4px solid grey;
 }
 
+/*************************************************************
+                    BACK TO TOP
+**************************************************************/
+#myBtn {
+    border-color: #000;
+    background-color:rgba(0, 110, 255, 0.4);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-left: 1460px;
+}
 
 /**************************************************************
                     FOOTER SECTION STYLES
