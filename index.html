@@ -35,7 +35,7 @@
 			      		Bootstrap
 			    	</a>
 
-			    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<button class="navbar-toggler mt-auto mb-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    			<span class="navbar-toggler-icon"></span>
 		  			</button>
 
@@ -125,6 +125,7 @@
 			<span></span>
 		</a>
 	</div>
+
 
 	<section id="aboutUsSection">
 		<div class="first-section container">
@@ -512,10 +513,17 @@
 	<section id="footerSection">
 		<footer class="footer-distributed">
 
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 
-					<div class="col-lg-4 col-12 address">
+					<div class="col-lg-4 col-12 mb-4">
+						<div class="footer-logo d-lg-block d-xl-block d-none"><img src="footer_desktop.png" alt="logo" width="380" height="120"></div>
+						<div class="footer-logo d-lg-none d-xl-none"><img src="footer_mobile.png" alt="logo" width="350" height="120"></div>
+					</div>
+
+
+					
+					<div class="col-lg-5 col-12 address d-lg-block d-xl-block d-none">
 						<div>
 							<i class="fa fa-map-marker"></i>
 							<span class="contact-info">H.R. Mahajani Rd, Matunga, Mumbai, India</span>
@@ -528,53 +536,53 @@
 
 						<div>
 							<i class="fa fa-phone"></i>
-							<span class="contact-info">+ 9324961234</span>
+							<span class="contact-info">+91 9324961234</span>
 						</div>
-
-
 					</div>
 
 
-					
-					<div class="col-lg-4 col-12">
-						<div class="footer-logo"><img src="footer.png" alt="logo"></div>
-
-					<!--	<p class="footer-links">
-							<a href="#">Home</a><span> *</span>
-							<a href="#">Technologies</a><span>  *</span>
-							<a href="#">Our Team</a><span>  *</span>
-							<a href="#">About Us</a><span>  *</span>
-							<a href="#">Contact Us</a>
-						</p> 
-
-						<p class="footer-company-name">DSC VJTI, Mumbai &copy; 2021</p> -->
-
-					</div>
-
-
-					<div class="footer-right">
+					<div class="col-lg-3">
+						<h4 class="font-weight-bold mt-3">Follow Us</h4>
 						<div class="footer-icons">
-							<a class="facebook" href="#" target="_blank"><i
-								class="fab fa-facebook-f"></i></a>
-							<a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-							<a class="linkedin" href="#" target="_blank"><i
-								class="fab fa-linkedin"></i></a>
-							<a class="github" href="#" target="_blank"><i class="fab fa-github"></i></a>
-							<a class="instagram" href="" target="_blank"><i
-								class="fab fa-instagram"></i></a>
-							<a class="youtube" href="#" target="_blank"><i
-								class="fab fa-youtube"></i></a>
-							<a class="medium_social" href="#" target="_blank"><i
-								class="fab fa-medium"></i></a>
-							<a class="slack" href="#" target="_blank"><i class="fab fa-slack"></i></a>
+							<a class="facebook" href="#" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a class="twitter" href="#" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a class="linkedin" href="#" target="_blank">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							<a class="github" href="#" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+						</div>
+						<div class="footer-icons" style="margin-top: -1px;">
+							<a class="instagram" href="" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a class="youtube" href="#" target="_blank">
+								<i class="fab fa-youtube"></i>
+							</a>
+							<a class="medium_social" href="#" target="_blank">
+								<i class="fab fa-medium"></i>
+							</a>
+							<a class="slack" href="#" target="_blank">
+								<i class="fab fa-slack"></i>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container">
-			<br>
-			<hr class="horizontalline-footer">
-			<p style="text-align: center; color: gray;"> &copy; DSC Veermata Jijabai Technological Institute (VJTI), Mumbai</p>
+			<script type="text/javascript">
+				date = new Date();
+			</script>
+			<div class="container text-center">
+				<br>
+				<hr class="horizontalline-footer">
+				<p id="copyright" style="color: white;">
+					&copy; DSC VJTI | <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+				</p>
 			</div>
 		</footer>
 	</section>

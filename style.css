@@ -319,7 +319,7 @@ button:hover, button:focus{
     font-size: 1.4em;
     /*line-height: 22px;*/
     color: var(--textBlack);
-    letter-spacing: 0.3px;
+    letter-spacing: 0.1px;
     margin-top: 10px;
 }
 
@@ -582,7 +582,7 @@ button:hover, button:focus{
                     FOOTER SECTION STYLES
 **************************************************************/
 
-#footerSection footer {
+#footerSection footer{
     position: static;
     bottom: 0;
 }
@@ -593,24 +593,12 @@ button:hover, button:focus{
     box-sizing: border-box;
     width: 100%;    
     font-weight: 600;
-    padding: 30px 10px 30px 10px;
+    padding: 20px 10px;
     /*margin-top: 80px;*/
 }
 
-#footerSection .footer-distributed .footer-logo {
+#footerSection .footer-distributed .footer-logo{
     margin: auto;
-}
-
-#footerSection .footer-distributed .footer-links{
-    color: var(--textWhite);
-    margin:  0;
-    padding: 0;
-}
-
-#footerSection .footer-distributed .footer-links a{
-    font-size: 0.93em;
-    text-decoration: none;
-    color: var(--textWhite);
 }
 
 #footerSection .footer-distributed .address i{
@@ -634,6 +622,7 @@ button:hover, button:focus{
 #footerSection .footer-distributed span.contact-info{
     font-size: 0.93em;
     color: var(--textWhite);
+    vertical-align: middle;
     margin: 0;
 }
 
@@ -645,34 +634,37 @@ button:hover, button:focus{
 	text-decoration: none;
 }
 
-/* Footer Right */
+#footerSection .footer-distributed .footer-icons{
+    margin-top: 15px;
+}
 
-
-.footer-distributed .footer-icons a {
+#footerSection .footer-distributed .footer-icons a{
     display: inline-block;
     width: 35px;
     height: 35px;
     cursor: pointer;
+    background-color: #33383b;
     border-radius: 2px;
+
     font-size: 20px;
     color: #ffffff;
     text-align: center;
     line-height: 35px;
+
     margin-right: 3px;
     margin-bottom: 5px;
 }
 
-
-.footer-icons a:hover {
+#footerSection .footer-icons a:hover{
     opacity: 0.7;
 }
 
-.facebook {
+/*.facebook{
     background: #3B5998;
     color: white;
 }
 
-.twitter {
+.twitter{
     background: #55ACEE;
     color: white;
 }
@@ -705,10 +697,19 @@ button:hover, button:focus{
 .slack {
     background:grey;
     color: white;
+}*/
+
+#footerSection .footer-distributed h4{
+    font-size: 1.1em;
+    color: var(--textWhite);
 }
 
-#footerSection .footer-distributed .horizontalline-footer {
-    width: 20%;
+#footerSection .footer-distributed .horizontalline-footer{
+    display: block; 
+    height: 2px;
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    width: 70%;
     margin: auto;
     margin-bottom: 15px;
     border-radius: 2px;
@@ -756,16 +757,19 @@ button:hover, button:focus{
         justify-content: center;
     }
 
-    .footer-distributed .footer-right {
+    .footer-distributed .footer-right{
         margin: auto;
         margin-right: 1cm;
         margin-top: 0.6cm;
     }
 
-    #footerSection .footer-distributed .footer-logo {
+    #footerSection .footer-distributed .footer-logo{
         margin: auto;
     }
 
+    #footerSection .footer-distributed .address{
+        padding-left: 50px;
+    }
 }
 
 
@@ -844,19 +848,11 @@ button:hover, button:focus{
         width: 100%;
     }
 
+    #footerSection .footer-distributed h4{
+        font-size: 1.3em;
+    }
+
     #footerSection .footer-distributed{
     	text-align: center;
-    }
-
-    #footerSection .footer-distributed .address{
-       /* margin-top: -4cm;
-        visibility: hidden; */
-        margin-bottom: 1cm;
-        text-align: center;
-    }
-
-    #footerSection .footer-distributed .footer-right {
-        margin: auto;        
-        margin-top: 1cm;
     }
 }
