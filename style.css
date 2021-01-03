@@ -714,6 +714,13 @@ button:hover, button:focus{
     color: white;
 }
 
+#footerSection .footer-distributed .horizontalline-footer {
+    width: 20%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
 /**************************************************************
                     CHANGES FOR DESKTOP VIEW
 **************************************************************/
@@ -752,6 +759,12 @@ button:hover, button:focus{
         margin-right: 1cm;
         margin-top: 0.6cm;
     }
+
+    #footerSection .footer-distributed .footer-logo {
+        justify-content: center;
+        margin-left: -1cm;
+    }
+
 }
 
 
