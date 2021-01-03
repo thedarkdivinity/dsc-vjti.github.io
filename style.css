@@ -445,7 +445,11 @@ button:hover, button:focus{
 #contactUsSection{
     background-color: var(--backgroundGray); 
 }
-
+#contactUsSection .social a{
+    padding: 20px;
+    color: #7b7c7c;
+    font-size: 1.1rem;
+}
 #contactUsSection .social a{
     padding: 20px;
     color: #7b7c7c;
@@ -860,3 +864,6 @@ button:hover, button:focus{
         margin-top: 1cm;
     }
 }
+
+
+
