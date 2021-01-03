@@ -761,8 +761,7 @@ button:hover, button:focus{
     }
 
     #footerSection .footer-distributed .footer-logo {
-        justify-content: center;
-        margin-left: -1cm;
+        margin: auto;
     }
 
 }
