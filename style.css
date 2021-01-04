@@ -543,6 +543,7 @@ button:hover, button:focus{
     width: 200px;
     height: 40px;
     background-color: var(--backgroundWhite);
+    border-radius: 99999px !important;
     color: var(--textBlack);
     border: none;
     outline: none;
@@ -553,7 +554,14 @@ button:hover, button:focus{
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
 }
-
+.material-icons{
+    margin-left: 10px;
+}
+.animate__shakeX{
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-iteration-count: infinite;
+}
 #contactUsSection .c-inputs button:hover,
 #contactUsSection .c-inputs button:active{
 	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
@@ -825,7 +833,8 @@ button:hover, button:focus{
 	}
 
 	#aboutVJTI{
-		margin-top: 40px;
+        margin-top: 40px;
+        position: relative;
 	}
 
 	#contactUsSection #contact{
@@ -837,7 +846,26 @@ button:hover, button:focus{
 	#contactUsSection .map {
         display: none;
     }
-
+    .custom-shape-divider-bottom-1609734915 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1609734915 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 159px;
+    }
+    
+    .custom-shape-divider-bottom-1609734915 .shape-fill {
+        fill: #0f9d58;
+    }
     #contactUsSection #contact{
         position: static;
         transform: translate(0, 0);
