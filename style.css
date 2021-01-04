@@ -492,11 +492,11 @@ button:hover, button:focus{
 }
 
 #teamSection .container .ourCard .content .imgBx.redIcon{
-    background-color: var(--googleRed);
+    background-color: var(--googleGreen);
 }
 
 #teamSection .container .ourCard .content .imgBx.greenIcon{
-    background-color: var(--googleGreen);
+    background-color: var(--googleRed);
 }
 
 #teamSection .container .ourCard .content .imgBx.yellowIcon{
@@ -549,14 +549,14 @@ button:hover, button:focus{
 #teamSection .container .ourCard .greenLinks a{
     text-decoration: none;
     font-size: 1.3em;
-    color: var(--googleGreen);
+    color: var(--googleRed);
     padding: 0 5px;
 }
 
 #teamSection .container .ourCard .redLinks a{
     text-decoration: none;
     font-size: 1.3em;
-    color: var(--googleRed);
+    color: var(--googleGreen);
     padding: 0 5px;
 }
 
