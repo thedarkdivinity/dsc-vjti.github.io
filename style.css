@@ -218,7 +218,7 @@ button:hover, button:focus{
 
 .arrow{
     position: absolute;
-    top: 83%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -391,7 +391,8 @@ button:hover, button:focus{
 #aboutVJTI{
     position: relative;
 }
-.custom-shape-divider-bottom-1609750485 {
+
+.custom-shape-divider-bottom-1609750485{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -401,7 +402,7 @@ button:hover, button:focus{
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1609750485 svg {
+.custom-shape-divider-bottom-1609750485 svg{
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -409,7 +410,7 @@ button:hover, button:focus{
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1609750485 .shape-fill {
+.custom-shape-divider-bottom-1609750485 .shape-fill{
     fill: #ECF0F1;
 }
 
@@ -417,6 +418,7 @@ button:hover, button:focus{
 /**************************************************************
                     OUR TEAM PAGE STYLES
 **************************************************************/
+
 #teamSection .container .nav-item:hover{
     background-color:rgba(0, 110, 255, 0.4);
     border-radius:5px;
@@ -425,49 +427,87 @@ button:hover, button:focus{
     background-color:rgba(0, 110, 255, 0.4);
 }
 
-#teamSection .container .card{
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background: rgb(255,255,255);
-    margin: 20px;
-    box-shadow: rgba(0, 0, 0, 0.03) 2px 2px 30px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px);
+#teamSection .container .ourCard{
+    text-align: center;
+    min-width: 250px;
+    padding: 60px 20px 10px 20px;
+    transition: all ease-in-out .3s;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .15);
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#teamSection .container .card:hover{
+#teamSection .container .ourCard.blueContent:hover{
+    background-color: var(--googleBlue);
     box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
 }
 
-#teamSection .container .card .content{
+#teamSection .container .ourCard.redContent:hover{
+    background-color: var(--googleRed);
+    box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
+}
+
+#teamSection .container .ourCard.yellowContent:hover{
+    background-color: var(--googleYellow);
+    box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
+}
+
+#teamSection .container .ourCard.greenContent:hover{
+    background-color: var(--googleGreen);
+    box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
+}
+
+#teamSection .container .ourCard .content{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--textBlack);
     flex-direction: column;
     /*opacity: 0.5;*/
     transition: 0.5s;
 }
 
-#teamSection .container .card:hover .content{
+#teamSection .container .ourCard:hover .content{
     opacity: 1;
-    transform: translateY(-20px);
+    color: var(--textWhite);
+    transition: all ease 0.3s;
+    transform: translateY(-30px);
 }
 
-#teamSection .container .card .content .imgBx{
+#teamSection .container .ourCard .content .imgBx{
     position: relative;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid rgba(0,0,0,0.25);
+    /*border: 4px solid rgba(0,0,0,0.25);*/
 }
 
-#teamSection .container .card .content .imgBx img{
+#teamSection .container .ourCard .content .imgBx.blueIcon{
+    background-color: var(--googleBlue);
+}
+
+#teamSection .container .ourCard .content .imgBx.redIcon{
+    background-color: var(--googleRed);
+}
+
+#teamSection .container .ourCard .content .imgBx.greenIcon{
+    background-color: var(--googleGreen);
+}
+
+#teamSection .container .ourCard .content .imgBx.yellowIcon{
+    background-color: var(--googleYellow);
+}
+
+#teamSection .container .ourCard:hover .content .imgBx{
+    background-color: var(--backgroundWhite); 
+}
+
+#teamSection .container .ourCard .content .imgBx img{
     position: absolute;
     top: 0;
     left: 0;
@@ -476,45 +516,59 @@ button:hover, button:focus{
     object-fit: cover;
 }
 
-#teamSection .container .card .content .contentBx h3{
-    color: #000;
+#teamSection .container .ourCard .content .contentBx h3{
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.2em;
     text-align: center;
     margin: 20px 0 10px;
     line-height: 1.1em;
 }
 
-#teamSection .container .card .content .contentBx h3 span{
-    font-size: 12px;
+#teamSection .container .ourCard .content .contentBx h3 span{
+    font-size: 0.7em;
     font-weight: 500;
     text-transform: initial;
 }
 
-#teamSection .container .card .sci{
-    position: absolute;
-    bottom: 50px;
-    display: flex;
-}
-
-#teamSection .container .card .sci li{
-    list-style: none;
-    margin: 0 10px;
-    transform: translateY(40px);
-    transition: 0.5s;
-    opacity: 0;
-    transition-delay: calc(0.1s * var(--i));
-}
-
-#teamSection .container .card:hover .sci li{
-    transform: translateY(0px);
+#teamSection .container .ourCard .profiles{
+    text-decoration: none;
+    padding: 0 20px;
     opacity: 1;
+    font-weight: 700;
 }
 
-#teamSection .container .card .sci li a{
-    color: #000;
+#teamSection .container .ourCard .blueLinks a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--googleBlue);
+    padding: 0 5px;
+}
+
+#teamSection .container .ourCard .greenLinks a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--googleGreen);
+    padding: 0 5px;
+}
+
+#teamSection .container .ourCard .redLinks a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--googleRed);
+    padding: 0 5px;
+}
+
+#teamSection .container .ourCard .yellowLinks a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--googleYellow);
+    padding: 0 5px;
+}
+
+#teamSection .container .ourCard:hover a{
+    color: var(--textWhite);
 }
 
 
@@ -523,7 +577,8 @@ button:hover, button:focus{
 **************************************************************/
 
 #contactUsSection{
-    background-color: var(--backgroundGray); 
+    background-color: var(--backgroundGray);
+    /*margin-left: 0; */
 }
 #contactUsSection .social a{
     padding: 20px;
@@ -539,6 +594,7 @@ button:hover, button:focus{
 #contactUsSection #contact{
 	display: flex;
     align-items: center;
+    /*padding: auto 40px;*/
 }
 
 #contactUsSection .social{
@@ -575,7 +631,7 @@ button:hover, button:focus{
 
 #contactUsSection .c-heading p{
     color: var(--textWhite);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     margin: 0px;
     padding: 0px;
@@ -591,7 +647,7 @@ button:hover, button:focus{
 }
 
 #contactUsSection .c-inputs input{
-    width: 250px;
+    width: 330px;
     height: 45px;
     background-color: transparent;
     border-radius: 18px;
@@ -605,7 +661,7 @@ button:hover, button:focus{
 }
 
 #contactUsSection .c-inputs textarea{
-    width: 250px !important;
+    width: 330px;
     height: 200px !important;
     outline: none;
     background-color: transparent;
@@ -634,18 +690,22 @@ button:hover, button:focus{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    align-items: center;
+    /*border-radius: 10px;*/
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
 }
+
 .material-icons{
     margin-left: 10px;
 }
+
 .animate__shakeX{
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-iteration-count: infinite;
 }
+
 #contactUsSection .c-inputs button:hover,
 #contactUsSection .c-inputs button:active{
 	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
@@ -658,17 +718,6 @@ button:hover, button:focus{
     border: 4px solid grey;
 }
 
-/*************************************************************
-                    BACK TO TOP
-**************************************************************/
-#myBtn {
-    border-color: #000;
-    background-color:rgba(0, 110, 255, 0.4);
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 4px;
-    margin-left: 1460px;
-}
 
 /**************************************************************
                     FOOTER SECTION STYLES
@@ -751,43 +800,8 @@ button:hover, button:focus{
     opacity: 0.7;
 }
 
-/*.facebook{
-    background: #3B5998;
-    color: white;
-}
-
-.twitter{
-    background: #55ACEE;
-    color: white;
-}
-
-.linkedin {
-    background: #0e76a8;
-    color: white;
-}
-
-.github {
-    background: grey;
-    color: white;
-}
-
-.instagram {
+/*.instagram {
     background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    color: white;
-}
-
-.youtube {
-    background: #bb0000;
-    color: white;
-}
-
-.medium_social {
-    background: #000000;
-    color: white;
-}
-
-.slack {
-    background:grey;
     color: white;
 }*/
 
@@ -817,11 +831,11 @@ button:hover, button:focus{
 	}
 
 	#landingPageSection #content-container{
-		margin-top: 280px;
+		margin-top: 50%;
 	}
 
 	#landingPageSection #bg-container{
-		margin-top: 150px;
+		margin-top: 30%;
 	}
 
 	#aboutDSC{
@@ -891,9 +905,11 @@ button:hover, button:focus{
         right: -12px;
         bottom: 0px;
     }
-#technologiesSection{
-    position: relative;
-}
+    
+    #technologiesSection{
+        position: relative;
+    }
+
     #aboutUsSection, #technologiesSection{
         padding-top: 25px;
         padding-bottom: 25px;
@@ -936,8 +952,8 @@ button:hover, button:focus{
 	}
 
 	#contactUsSection #contact{
-		margin-left: 25px;
-		margin-right: 25px;
+		margin-left: 35px;
+		margin-right: auto;
 		margin-bottom: 45px;
 	}
 
@@ -948,7 +964,12 @@ button:hover, button:focus{
     #contactUsSection #contact{
         position: static;
         transform: translate(0, 0);
-        width: 100%;
+        /*width: 100%;*/
+    }
+
+    #contactUsSection .c-inputs input,
+    #contactUsSection .c-inputs textarea{
+        width: 270px;
     }
 
     #footerSection .footer-distributed h4{
