@@ -1254,11 +1254,11 @@
         });
       });
     </script>
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script type="text/javascript">
       $(document).ready(function () {
         $("nav ul li a").click(function (event) {
@@ -1271,22 +1271,22 @@
           });
           event.preventDefault();
         });
-      });
-      $(window).scroll(function () {
-        container_RowTop = $(this).offset().top;
-        if ($(document).scrollTop() > container_RowTop) {
-          thisOfs = $(this).attr("id");
-          $(".container_row").removeClass("active");
-          ActiveID = $(this).addClass("active").attr("id");
-        }
-      });
-      $("nav ul li").each(function (index, el) {
-        thisChildren = $(this).children("a");
-        thisChildrenHref = $(this).children("a").attr("href");
-        if (thisChildrenHref === "#" + ActiveID) {
-          $("nav ul li").removeClass("active");
-          $(thisChildren).addClass("active");
-        }
+        $(window).scroll(function () {
+          container_RowTop = $(this).offset().top;
+          if ($(document).scrollTop() > container_RowTop) {
+            thisOfs = $(this).attr("id");
+            $(".container_row").removeClass("active");
+            var ActiveID = $(this).addClass("active").attr("id");
+          }
+          $("nav ul li").each(function (index, el) {
+            thisChildren = $(this).children("a");
+            thisChildrenHref = $(this).children("a").attr("href");
+            if (thisChildrenHref === "#" + ActiveID) {
+              $("nav ul li").removeClass("active");
+              $(thisChildren).addClass("active");
+            }
+          });
+        });
       });
     </script>
   </body>
