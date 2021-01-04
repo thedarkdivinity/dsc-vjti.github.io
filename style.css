@@ -946,6 +946,10 @@ button:hover, button:focus{
     	text-align: center;
     }
 }
+.active{
+    border-bottom: 3px solid #298cf8;
+    
+}
 
 
 
