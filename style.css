@@ -446,8 +446,8 @@ button:hover, button:focus{
 }
 
 #teamSection .container .ourCard.redContent:hover{
-    background-color: var(--googleRed);
-    box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
+    background-color: var(--googleGreen);
+    box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
 }
 
 #teamSection .container .ourCard.yellowContent:hover{
@@ -456,8 +456,8 @@ button:hover, button:focus{
 }
 
 #teamSection .container .ourCard.greenContent:hover{
-    background-color: var(--googleGreen);
-    box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
+    background-color: var(--googleRed);
+    box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
 }
 
 #teamSection .container .ourCard .content{
