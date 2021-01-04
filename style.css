@@ -695,12 +695,35 @@ button:hover, button:focus{
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
 }
-
+/* 
 .material-icons{
     margin-left: 10px;
+} */
+.custom-shape-divider-top-1609782702 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
+.custom-shape-divider-top-1609782702 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1609782702 .shape-fill {
+    fill: #FFFFFF;
+}
 .animate__shakeX{
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-iteration-count: infinite;
+}
+.animate__rubberBand{
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-iteration-count: infinite;
