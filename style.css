@@ -912,7 +912,7 @@ button:hover, button:focus{
 	#contactUsSection .map{
         display: none;
     }
-    .custom-shape-divider-bottom-1609734915 {
+    .custom-shape-divider-bottom-1609736151 {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -922,15 +922,15 @@ button:hover, button:focus{
         transform: rotate(180deg);
     }
     
-    .custom-shape-divider-bottom-1609734915 svg {
+    .custom-shape-divider-bottom-1609736151 svg {
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
         height: 159px;
     }
     
-    .custom-shape-divider-bottom-1609734915 .shape-fill {
-        fill: #0f9d58;
+    .custom-shape-divider-bottom-1609736151 .shape-fill {
+        fill: #4285f4;
     }
     #contactUsSection #contact{
         position: static;
