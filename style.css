@@ -258,6 +258,7 @@ button:hover, button:focus{
 
 #aboutUsSection{
     background-color: var(--backgroundGray);
+    position: relative;
 }
 
 #aboutUsSection .sectional_heading{
@@ -864,7 +865,9 @@ button:hover, button:focus{
         right: -12px;
         bottom: 0px;
     }
-
+#technologiesSection{
+    position: relative;
+}
     #aboutUsSection, #technologiesSection{
         padding-top: 25px;
         padding-bottom: 25px;
@@ -872,6 +875,9 @@ button:hover, button:focus{
 
     #teamSection, #contactUsSection{
         padding: 40px 0;
+    }
+    #stats{
+        position: relative;
     }
 
     #aboutUsSection #stats{
@@ -930,7 +936,7 @@ button:hover, button:focus{
     }
     
     .custom-shape-divider-bottom-1609736151 .shape-fill {
-        fill: #4285f4;
+        fill: #ecf0f1;
     }
     #contactUsSection #contact{
         position: static;
