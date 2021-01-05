@@ -1,45 +1,45 @@
-:root{
+:root {
     /* BACKGROUND COLORS */
-    --backgroundGray:#FAFAFA;
-    --backgroundDarkGray:#292c2f;
-    --backgroundWhite:#FFFFFF;
-    --buttonBlue:#2F5BE7;
-    --buttonHover:#007BFF;
-    --textBlack:#1B2733;
-    --textGray:#637282;
-    --textWhite:#FFFFFF;
-    --footerTextGray:#92999f;
-    --googleGreen:#0F9D58;
-    --googleYellow:#F4B400;
-    --googleRed:#DB4437;
-    --googleBlue:#4285F4;
-    --marginTop:20px;
+    --backgroundGray: #FAFAFA;
+    --backgroundDarkGray: #292c2f;
+    --backgroundWhite: #FFFFFF;
+    --buttonBlue: #2F5BE7;
+    --buttonHover: #007BFF;
+    --textBlack: #1B2733;
+    --textGray: #637282;
+    --textWhite: #FFFFFF;
+    --footerTextGray: #92999f;
+    --googleGreen: #0F9D58;
+    --googleYellow: #F4B400;
+    --googleRed: #DB4437;
+    --googleBlue: #4285F4;
+    --marginTop: 20px;
 }
 
 /**************************************************************
                     COMMON STYLES
 **************************************************************/
 
-*{
-	margin: 0px;
-	padding: 0px;
-	font-family: "Product Sans", sans-serif;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Product Sans", sans-serif;
     font-size: 16px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Enables smooth scrolling of the page  */
-html{
-    overflow-x:hidden; 
+html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 
-a{
-	text-decoration: none;
+a {
+    text-decoration: none;
 }
 
-.heading{
+.heading {
     font-size: 3em;
     font-weight: 700;
     line-height: 1.44;
@@ -49,16 +49,16 @@ a{
     margin-bottom: 0px;
 }
 
-.subheading{
+.subheading {
     font-size: 1em;
     color: var(--textGray);
     line-height: 22px;
     margin-top: -8px;
-    letter-spacing: -0.1px; 
-    text-align: center; 
+    letter-spacing: -0.1px;
+    text-align: center;
 }
 
-button{
+button {
     margin-top: 10px;
     background: var(--buttonBlue);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -75,10 +75,11 @@ button{
     display: block;
     text-align: center;
     border-radius: 2px !important;
-    font-weight:bold !important;
+    font-weight: bold !important;
 }
 
-button:hover, button:focus{
+button:hover,
+button:focus {
     background-color: var(--buttonHover);
     color: var(--textWhite);
     box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
@@ -89,7 +90,7 @@ button:hover, button:focus{
                     BACK TO TOP BUTTON STYLES
 **************************************************************/
 
-#button{
+#button {
     display: inline-block;
     background-color: #6e6860;
     width: 50px;
@@ -99,14 +100,14 @@ button:hover, button:focus{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
 }
 
-#button::after{
+#button::after {
     content: "\f077";
     font-family: FontAwesome;
     font-weight: normal;
@@ -116,25 +117,25 @@ button:hover, button:focus{
     color: #fff;
 }
 
-#button:hover{
-  cursor: pointer;
-  text-decoration: none;
-  background-color: #c2b9ad;
+#button:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #c2b9ad;
 }
 
-#button:active{
-  background-color: #555;
+#button:active {
+    background-color: #555;
 }
 
-#button.show{
-  opacity: 1;
-  visibility: visible;
+#button.show {
+    opacity: 1;
+    visibility: visible;
 }
 
-@media (min-width: 500px){
-  #button {
-    margin: 30px;
-  }
+@media (min-width: 500px) {
+    #button {
+        margin: 30px;
+    }
 }
 
 
@@ -142,39 +143,39 @@ button:hover, button:focus{
                     LANDING PAGE STYLES
 **************************************************************/
 
-#landingPageSection #header{
-	position: fixed;
-	z-index: 99999;
-	width: 100%;
-	transition: 0.6s;
+#landingPageSection #header {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    transition: 0.6s;
 }
 
-#landingPageSection #header.sticky{
-	-webkit-backface-visibility: hidden;
-	-webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-	-moz-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+#landingPageSection #header.sticky {
+    -webkit-backface-visibility: hidden;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    -moz-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
-#landingPageSection #header nav{
-	background: var(--backgroundWhite);
+#landingPageSection #header nav {
+    background: var(--backgroundWhite);
 }
 
-#landingPageSection #header nav a{
-	font-size: 0.93em;
+#landingPageSection #header nav a {
+    font-size: 0.93em;
     font-weight: 600;
-	text-decoration: none;
-	padding: 10px 15px;
-	text-align: center;
-	color: var(--textBlack);
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    color: var(--textBlack);
 }
 
-#landingPageSection #header nav a:hover{
+#landingPageSection #header nav a:hover {
     opacity: 0.9;
-    color:var(--buttonHover);
+    color: var(--buttonHover);
 }
 
-#landingPageSection .toButton{
+#landingPageSection .toButton {
     text-align: center;
     border-radius: 2rem;
     background: var(--buttonBlue);
@@ -185,44 +186,45 @@ button:hover, button:focus{
     transition: all 0.4s;
 }
 
-#landingPageSection a.toButton:hover{
-	background-color: var(--buttonHover);
+#landingPageSection a.toButton:hover {
+    background-color: var(--buttonHover);
     color: var(--textWhite);
     box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
 }
 
-#landingPageSection #content-container h2{
-	color:  var(--textBlack);
-	font-weight: 700;
-	font-size: 3em;
-	line-height: 1em;
+#landingPageSection #content-container h2 {
+    color: var(--textBlack);
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
 }
 
-#landingPageSection .wrap{
-	font-size: 3em;
-	color: var(--textGray);
-	font-weight: 700;
+#landingPageSection .wrap {
+    font-size: 3em;
+    color: var(--textGray);
+    font-weight: 700;
 }
 
-#landingPageSection #content-container p{
-	line-height: 1.5em;
-	color: var(--textGray);
-	font-size: 1em;
-	letter-spacing: -0.1px;
+#landingPageSection #content-container p {
+    line-height: 1.5em;
+    color: var(--textGray);
+    font-size: 1em;
+    letter-spacing: -0.1px;
 }
 
-#landingPageSection #bg-container svg{
-	width: 100%;
-	height: 100%;
+#landingPageSection #bg-container svg {
+    width: 100%;
+    height: 100%;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     top: 78%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.arrow span{
+
+.arrow span {
     display: block;
     width: 22px;
     height: 22px;
@@ -232,23 +234,28 @@ button:hover, button:focus{
     margin: -10px;
     animation: animate 2s infinite;
 }
-.arrow span:nth-child(2){
+
+.arrow span:nth-child(2) {
     animation-delay: -0.2s;
 }
-.arrow span:nth-child(3){
+
+.arrow span:nth-child(3) {
     animation-delay: -0.4s;
 }
+
 @keyframes animate {
-    0%{
+    0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
+        transform: rotate(45deg) translate(-20px, -20px);
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+        transform: rotate(45deg) translate(20px, 20px);
     }
 }
 
@@ -257,12 +264,12 @@ button:hover, button:focus{
                     ABOUT US SECTION STYLES
 **************************************************************/
 
-#aboutUsSection{
+#aboutUsSection {
     background-color: var(--backgroundGray);
     position: relative;
 }
 
-#aboutUsSection .sectional_heading{
+#aboutUsSection .sectional_heading {
     font-size: 1.7em;
     font-weight: 600;
     color: var(--textBlack);
@@ -270,7 +277,7 @@ button:hover, button:focus{
     margin-bottom: 18px;
 }
 
-#aboutUsSection .aboutusRightPara{
+#aboutUsSection .aboutusRightPara {
     margin-top: 14px;
     font-size: 1em;
     font-weight: 500;
@@ -279,20 +286,20 @@ button:hover, button:focus{
     color: var(--textGray);
 }
 
-#aboutUsSection img{
+#aboutUsSection img {
     display: block;
     width: 100%;
     height: 100%;
     margin-top: 70px;
 }
 
-#aboutUsSection #stats{
-	margin-top: 50px;
-    background-color: var(--backgroundWhite); 
-	/*margin-bottom: 50px;*/
+#aboutUsSection #stats {
+    margin-top: 50px;
+    background-color: var(--backgroundWhite);
+    /*margin-bottom: 50px;*/
 }
 
-#aboutUsSection .statsCard{
+#aboutUsSection .statsCard {
     background-color: var(--backgroundWhite);
     text-align: center;
     padding: 10px;
@@ -301,17 +308,17 @@ button:hover, button:focus{
     transition-property: all;
 }
 
-#aboutUsSection .statsCard p{
-	line-height: 1.5em;
-	color: var(--textGray);
-	font-size: 1.1em;
-	letter-spacing: -0.1px;
+#aboutUsSection .statsCard p {
+    line-height: 1.5em;
+    color: var(--textGray);
+    font-size: 1.1em;
+    letter-spacing: -0.1px;
 }
 
-#aboutUsSection .statsCard i{
-	font-size: 2em;
-	padding: 20px;
-	border-radius: 50%;
+#aboutUsSection .statsCard i {
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 50%;
 }
 
 
@@ -319,12 +326,12 @@ button:hover, button:focus{
                     TECHNOLOGIES PAGE STYLES
 **************************************************************/
 
-#technologiesSection{
+#technologiesSection {
     background-color: var(--backgroundGray);
     position: relative;
 }
 
-#technologiesSection .box{
+#technologiesSection .box {
     background-color: #ffffff;
     box-shadow: 0 0 15px rgba(99, 114, 130, 0.3);
     align-items: center;
@@ -335,14 +342,14 @@ button:hover, button:focus{
     position: relative;
 }
 
-#technologiesSection .box:hover{
-    box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
+#technologiesSection .box:hover {
+    box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
     transform: scale(1.01);
     transition: all ease 0.1s;
 }
 
-#technologiesSection .top-bar{
-    width:50%;
+#technologiesSection .top-bar {
+    width: 50%;
     height: 4px;
     position: absolute;
     left: 50%;
@@ -352,15 +359,15 @@ button:hover, button:focus{
     border-radius: 0px 0px 10px 10px;
 }
 
-#technologiesSection .details{
+#technologiesSection .details {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#technologiesSection .details img{
-    width:180px;
+#technologiesSection .details img {
+    width: 180px;
     height: 180px;
     border: 0.5px;
     border-radius: 50%;
@@ -370,7 +377,7 @@ button:hover, button:focus{
     margin-bottom: 15px;
 }
 
-#technologiesSection .details strong{
+#technologiesSection .details strong {
     font-weight: 700;
     font-size: 1.4em;
     /*line-height: 22px;*/
@@ -379,8 +386,8 @@ button:hover, button:focus{
     margin-top: 10px;
 }
 
-#technologiesSection .details p{
-	font-size: 0.9em;
+#technologiesSection .details p {
+    font-size: 0.9em;
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: -0.1px;
@@ -389,11 +396,11 @@ button:hover, button:focus{
     text-align: center;
 }
 
-#aboutVJTI{
+#aboutVJTI {
     position: relative;
 }
 
-.custom-shape-divider-bottom-1609750485{
+.custom-shape-divider-bottom-1609750485 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -403,7 +410,7 @@ button:hover, button:focus{
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1609750485 svg{
+.custom-shape-divider-bottom-1609750485 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -411,53 +418,23 @@ button:hover, button:focus{
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1609750485 .shape-fill{
+.custom-shape-divider-bottom-1609750485 .shape-fill {
     fill: #ECF0F1;
 }
 
-.custom-shape-divider-bottom-1609750485{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1609750485 svg{
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 133px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1609750485 .shape-fill{
-    fill: #ECF0F1;
-}
 
 /**************************************************************
                     OUR TEAM PAGE STYLES
 **************************************************************/
-#teamSection{
+#teamSection {
     position: relative;
 }
 
-<<<<<<< HEAD
-#teamSection .container .nav-item:hover{
-    background-color:rgba(0, 110, 255, 0.4);
-    border-radius:5px;
-}
-#teamSection .container .nav-link:focus{
-    background-color:rgba(0, 110, 255, 0.4);
-=======
 #teamSection .container .nav-item a {
     color: white;
->>>>>>> 411356aa969962df35807c6d3a1f8fb4262c4f8e
 }
 
-#teamSection .container .ourCard{
+#teamSection .container .ourCard {
     text-align: center;
     min-width: 250px;
     padding: 60px 20px 10px 20px;
@@ -470,27 +447,27 @@ button:hover, button:focus{
     margin-right: auto;
 }
 
-#teamSection .container .ourCard.blueContent:hover{
+#teamSection .container .ourCard.blueContent:hover {
     background-color: var(--googleBlue);
-    box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
+    box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
 }
 
-#teamSection .container .ourCard.redContent:hover{
+#teamSection .container .ourCard.redContent:hover {
     background-color: var(--googleGreen);
     box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
 }
 
-#teamSection .container .ourCard.yellowContent:hover{
+#teamSection .container .ourCard.yellowContent:hover {
     background-color: var(--googleYellow);
-    box-shadow: 2px 2px 30px rgba(4,15,49,0.08);
+    box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
 }
 
-#teamSection .container .ourCard.greenContent:hover{
+#teamSection .container .ourCard.greenContent:hover {
     background-color: var(--googleRed);
     box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
 }
 
-#teamSection .container .ourCard .content{
+#teamSection .container .ourCard .content {
     position: relative;
     display: flex;
     justify-content: center;
@@ -501,14 +478,14 @@ button:hover, button:focus{
     transition: 0.5s;
 }
 
-#teamSection .container .ourCard:hover .content{
+#teamSection .container .ourCard:hover .content {
     opacity: 1;
     color: var(--textWhite);
     transition: all ease 0.3s;
     transform: translateY(-30px);
 }
 
-#teamSection .container .ourCard .content .imgBx{
+#teamSection .container .ourCard .content .imgBx {
     position: relative;
     width: 150px;
     height: 150px;
@@ -517,27 +494,27 @@ button:hover, button:focus{
     /*border: 4px solid rgba(0,0,0,0.25);*/
 }
 
-#teamSection .container .ourCard .content .imgBx.blueIcon{
+#teamSection .container .ourCard .content .imgBx.blueIcon {
     background-color: var(--googleBlue);
 }
 
-#teamSection .container .ourCard .content .imgBx.redIcon{
+#teamSection .container .ourCard .content .imgBx.redIcon {
     background-color: var(--googleGreen);
 }
 
-#teamSection .container .ourCard .content .imgBx.greenIcon{
+#teamSection .container .ourCard .content .imgBx.greenIcon {
     background-color: var(--googleRed);
 }
 
-#teamSection .container .ourCard .content .imgBx.yellowIcon{
+#teamSection .container .ourCard .content .imgBx.yellowIcon {
     background-color: var(--googleYellow);
 }
 
-#teamSection .container .ourCard:hover .content .imgBx{
-    background-color: var(--backgroundWhite); 
+#teamSection .container .ourCard:hover .content .imgBx {
+    background-color: var(--backgroundWhite);
 }
 
-#teamSection .container .ourCard .content .imgBx img{
+#teamSection .container .ourCard .content .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -546,7 +523,7 @@ button:hover, button:focus{
     object-fit: cover;
 }
 
-#teamSection .container .ourCard .content .contentBx h3{
+#teamSection .container .ourCard .content .contentBx h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -556,48 +533,48 @@ button:hover, button:focus{
     line-height: 1.1em;
 }
 
-#teamSection .container .ourCard .content .contentBx h3 span{
+#teamSection .container .ourCard .content .contentBx h3 span {
     font-size: 0.7em;
     font-weight: 500;
     text-transform: initial;
 }
 
-#teamSection .container .ourCard .profiles{
+#teamSection .container .ourCard .profiles {
     text-decoration: none;
     padding: 0 20px;
     opacity: 1;
     font-weight: 700;
 }
 
-#teamSection .container .ourCard .blueLinks a{
+#teamSection .container .ourCard .blueLinks a {
     text-decoration: none;
     font-size: 1.3em;
     color: var(--googleBlue);
     padding: 0 5px;
 }
 
-#teamSection .container .ourCard .greenLinks a{
+#teamSection .container .ourCard .greenLinks a {
     text-decoration: none;
     font-size: 1.3em;
     color: var(--googleRed);
     padding: 0 5px;
 }
 
-#teamSection .container .ourCard .redLinks a{
+#teamSection .container .ourCard .redLinks a {
     text-decoration: none;
     font-size: 1.3em;
     color: var(--googleGreen);
     padding: 0 5px;
 }
 
-#teamSection .container .ourCard .yellowLinks a{
+#teamSection .container .ourCard .yellowLinks a {
     text-decoration: none;
     font-size: 1.3em;
     color: var(--googleYellow);
     padding: 0 5px;
 }
 
-#teamSection .container .ourCard:hover a{
+#teamSection .container .ourCard:hover a {
     color: var(--textWhite);
 }
 
@@ -606,28 +583,30 @@ button:hover, button:focus{
                     CONTACT US PAGE STYLES
 **************************************************************/
 
-#contactUsSection{
+#contactUsSection {
     background-color: var(--backgroundGray);
     /*margin-left: 0; */
 }
-#contactUsSection .social a{
-    padding: 20px;
-    color: #7b7c7c;
-    font-size: 1.1rem;
-}
-#contactUsSection .social a{
+
+#contactUsSection .social a {
     padding: 20px;
     color: #7b7c7c;
     font-size: 1.1rem;
 }
 
-#contactUsSection #contact{
-	display: flex;
+#contactUsSection .social a {
+    padding: 20px;
+    color: #7b7c7c;
+    font-size: 1.1rem;
+}
+
+#contactUsSection #contact {
+    display: flex;
     align-items: center;
     /*padding: auto 40px;*/
 }
 
-#contactUsSection .social{
+#contactUsSection .social {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -641,7 +620,7 @@ button:hover, button:focus{
     transition: all ease 0.3s;
 }
 
-#contactUsSection .contact-box{
+#contactUsSection .contact-box {
     background-color: var(--backgroundDarkGray);
     display: flex;
     flex-direction: column;
@@ -651,7 +630,7 @@ button:hover, button:focus{
     box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.1);
 }
 
-#contactUsSection .c-heading h1{
+#contactUsSection .c-heading h1 {
     color: var(--textWhite);
     font-size: 2.8rem;
     font-weight: 600;
@@ -659,7 +638,7 @@ button:hover, button:focus{
     padding: 0px;
 }
 
-#contactUsSection .c-heading p{
+#contactUsSection .c-heading p {
     color: var(--textWhite);
     font-size: 0.9rem;
     font-weight: 500;
@@ -668,7 +647,7 @@ button:hover, button:focus{
     text-align: center;
 }
 
-#contactUsSection .c-inputs{
+#contactUsSection .c-inputs {
     margin: 15px 0px;
     display: flex;
     flex-direction: column;
@@ -676,7 +655,7 @@ button:hover, button:focus{
     align-items: center;
 }
 
-#contactUsSection .c-inputs input{
+#contactUsSection .c-inputs input {
     width: 330px;
     height: 45px;
     background-color: transparent;
@@ -690,7 +669,7 @@ button:hover, button:focus{
     display: flex;
 }
 
-#contactUsSection .c-inputs textarea{
+#contactUsSection .c-inputs textarea {
     width: 330px;
     height: 200px !important;
     outline: none;
@@ -703,13 +682,13 @@ button:hover, button:focus{
 }
 
 #contactUsSection .c-inputs input:focus,
-#contactUsSection .c-inputs textarea:focus{
+#contactUsSection .c-inputs textarea:focus {
     border: 2px solid rgba(255, 255, 252, 1.00);
     transition: all ease 0.5s;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-#contactUsSection .c-inputs button{
+#contactUsSection .c-inputs button {
     width: 200px;
     height: 40px;
     background-color: var(--backgroundWhite);
@@ -725,6 +704,7 @@ button:hover, button:focus{
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
 }
+
 /* 
 .material-icons{
     margin-left: 10px;
@@ -748,83 +728,26 @@ button:hover, button:focus{
 .custom-shape-divider-top-1609782702 .shape-fill {
     fill: #FFFFFF;
 }
-.custom-shape-divider-top-1609835329 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
 
-.custom-shape-divider-top-1609835329 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1609835329 .shape-fill {
-    fill: #ECF0F1;
-}
-.custom-shape-divider-top-1609835453 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1609835453 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1609835453 .shape-fill {
-    fill: #ECF0F1;
-}
-.custom-shape-divider-top-1609837161 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1609837161 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 60px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1609837161 .shape-fill {
-    fill: #ECF0F1;
-}
-.animate__shakeX{
+.animate__shakeX {
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-iteration-count: infinite;
 }
-.animate__rubberBand{
+
+.animate__rubberBand {
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-iteration-count: infinite;
 }
 
 #contactUsSection .c-inputs button:hover,
-#contactUsSection .c-inputs button:active{
-	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+#contactUsSection .c-inputs button:active {
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
     transform: scale(1.02);
 }
 
-#contactUsSection .map{
+#contactUsSection .map {
     filter: grayscale(0.2);
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     border: 4px solid grey;
@@ -835,26 +758,26 @@ button:hover, button:focus{
                     FOOTER SECTION STYLES
 **************************************************************/
 
-#footerSection footer{
+#footerSection footer {
     position: static;
     bottom: 0;
 }
 
-#footerSection .footer-distributed{
+#footerSection .footer-distributed {
     background-color: var(--backgroundDarkGray);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
-    width: 100%;    
+    width: 100%;
     font-weight: 600;
     padding: 20px 10px;
     /*margin-top: 80px;*/
 }
 
-#footerSection .footer-distributed .footer-logo{
+#footerSection .footer-distributed .footer-logo {
     margin: auto;
 }
 
-#footerSection .footer-distributed .address i{
+#footerSection .footer-distributed .address i {
     background-color: #33383b;
     color: #ffffff;
     font-size: 25px;
@@ -867,31 +790,31 @@ button:hover, button:focus{
     vertical-align: middle;
 }
 
-#footerSection .footer-distributed i.fa-envelope{
+#footerSection .footer-distributed i.fa-envelope {
     font-size: 17px;
     line-height: 38px;
 }
 
-#footerSection .footer-distributed span.contact-info{
+#footerSection .footer-distributed span.contact-info {
     font-size: 0.93em;
     color: var(--textWhite);
     vertical-align: middle;
     margin: 0;
 }
 
-#footerSection .footer-distributed span.contact-info a{
-	color: var(--textWhite);
+#footerSection .footer-distributed span.contact-info a {
+    color: var(--textWhite);
 }
 
-#footerSection .footer-distributed span.contact-info a:hover{
-	text-decoration: none;
+#footerSection .footer-distributed span.contact-info a:hover {
+    text-decoration: none;
 }
 
-#footerSection .footer-distributed .footer-icons{
+#footerSection .footer-distributed .footer-icons {
     margin-top: 15px;
 }
 
-#footerSection .footer-distributed .footer-icons a{
+#footerSection .footer-distributed .footer-icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -908,7 +831,7 @@ button:hover, button:focus{
     margin-bottom: 5px;
 }
 
-#footerSection .footer-icons a:hover{
+#footerSection .footer-icons a:hover {
     opacity: 0.7;
 }
 
@@ -917,16 +840,16 @@ button:hover, button:focus{
     color: white;
 }*/
 
-#footerSection .footer-distributed h4{
+#footerSection .footer-distributed h4 {
     font-size: 1.1em;
     color: var(--textWhite);
 }
 
-#footerSection .footer-distributed .horizontalline-footer{
-    display: block; 
+#footerSection .footer-distributed .horizontalline-footer {
+    display: block;
     height: 2px;
     border: 0;
-    border-top: 1px solid rgba(255,255,255,0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
     width: 70%;
     margin: auto;
     margin-bottom: 15px;
@@ -938,65 +861,68 @@ button:hover, button:focus{
 **************************************************************/
 
 @media (min-width: 992px) {
-	#landingPageSection{
-		height: 100vh;
-	}
+    #landingPageSection {
+        height: 100vh;
+    }
 
-	#landingPageSection #content-container{
-		margin-top: 50%;
-	}
+    #landingPageSection #content-container {
+        margin-top: 50%;
+    }
 
-	#landingPageSection #bg-container{
-		margin-top: 30%;
-	}
+    #landingPageSection #bg-container {
+        margin-top: 30%;
+    }
 
-	#aboutDSC{
-		height: 70vh;
-	}
+    #aboutDSC {
+        height: 70vh;
+    }
 
-    #aboutVJTI{
+    #aboutVJTI {
         height: 60vh;
     }
 
-	#aboutUsSection, #technologiesSection, #teamSection{
+    #aboutUsSection,
+    #technologiesSection,
+    #teamSection {
         padding-top: 25px;
-		padding-bottom: 25px;
-	}
+        padding-bottom: 25px;
+    }
 
-    #technologiesSection, #teamSection{
+    #technologiesSection,
+    #teamSection {
         margin-top: 30px;
         padding-top: 50px;
     }
 
-    #teamSection{
+    #teamSection {
         margin-top: 50px;
         /*margin-bottom: 30px;*/
     }
 
-    #contactUsSection{
+    #contactUsSection {
         margin-top: 100px;
         padding: 40px 0;
     }
 
-    #aboutUsSection #stats{
+    #aboutUsSection #stats {
         padding: 50px 0;
     }
 
-	#contactUsSection #contact{
+    #contactUsSection #contact {
         justify-content: center;
     }
 
-    .footer-distributed .footer-right{
+    .footer-distributed .footer-right {
         margin: auto;
         margin-right: 1cm;
         margin-top: 0.6cm;
     }
 
-    #footerSection .footer-distributed .footer-logo{
+    #footerSection .footer-distributed .footer-logo {
         margin: auto;
     }
 
-    #footerSection .footer-distributed .address{
+    #footerSection .footer-distributed .address {
         padding-left: 50px;
     }
 }
@@ -1007,146 +933,158 @@ button:hover, button:focus{
 **************************************************************/
 
 @media (max-width: 991px) {
-	*{
-		font-size: 15px;
-	}
+    * {
+        font-size: 15px;
+    }
 
-	#landingPageSection #bg-container{
-		margin-top: 60px;
-	}
+    #landingPageSection #bg-container {
+        margin-top: 60px;
+    }
 
-	#landingPageSection #content-container{
-		margin-top: 130px;
-		text-align: center;
-	}
+    #landingPageSection #content-container {
+        margin-top: 130px;
+        text-align: center;
+    }
 
-	#landingPageSection #content-container button{
-		margin: auto;
-	}
+    #landingPageSection #content-container button {
+        margin: auto;
+    }
 
-    #button{
+    #button {
         right: -12px;
         bottom: 0px;
     }
-    
-    #technologiesSection{
+
+    #technologiesSection {
         position: relative;
     }
 
-    #aboutUsSection, #technologiesSection{
+    #aboutUsSection,
+    #technologiesSection {
         padding-top: 25px;
         padding-bottom: 25px;
     }
 
-    #technologiesSection{
+    #technologiesSection {
         margin-top: 60px;
     }
 
-    #teamSection, #contactUsSection{
+    #teamSection,
+    #contactUsSection {
         padding: 40px 0;
         margin-top: 80px;
     }
 
-    #stats{
+    #stats {
         position: relative;
     }
 
-    #aboutUsSection #stats{
+    #aboutUsSection #stats {
         padding: 40px 0;
     }
 
-    .arrow{
+    .arrow {
         position: absolute;
-        top:90%;
+        top: 90%;
         left: 50%;
     }
 
-    .arrow span{
+    .arrow span {
         width: 18px;
-        height: 18px; 
+        height: 18px;
     }
 
-	#aboutUsSection{
-		text-align: center;
-        padding-top: 20px; 
-	}
+    #aboutUsSection {
+        text-align: center;
+        padding-top: 20px;
+    }
 
-	#aboutUsSection button{
-		margin: auto;
-	}
+    #aboutUsSection button {
+        margin: auto;
+    }
 
-	#aboutVJTI{
+    #aboutVJTI {
         margin-top: 40px;
         position: relative;
-	}
+    }
 
-	#contactUsSection #contact{
-		margin-left: 35px;
-		margin-right: auto;
-		margin-bottom: 45px;
-	}
+    #contactUsSection #contact {
+        margin-left: 35px;
+        margin-right: auto;
+        margin-bottom: 45px;
+    }
 
-	#contactUsSection .map{
+    #contactUsSection .map {
         display: none;
     }
-    
-    #contactUsSection #contact{
+
+    #contactUsSection #contact {
         position: static;
         transform: translate(0, 0);
         /*width: 100%;*/
     }
 
     #contactUsSection .c-inputs input,
-    #contactUsSection .c-inputs textarea{
+    #contactUsSection .c-inputs textarea {
         width: 270px;
     }
 
-    #footerSection .footer-distributed h4{
+    #footerSection .footer-distributed h4 {
         font-size: 1.3em;
     }
 
-    #footerSection .footer-distributed{
-    	text-align: center;
+    #footerSection .footer-distributed {
+        text-align: center;
     }
 }
 
 /* Active navbar class  */
-.active{
+.active {
     -webkit-animation: colorTransition 20s infinite alternate;
-    animation:  colorTransition 20s infinite alternate;
+    animation: colorTransition 20s infinite alternate;
 }
-@keyframes colorTransition{
+
+@keyframes colorTransition {
     0% {
         color: #FFFF00;
     }
+
     10% {
         color: #8e44ad;
     }
+
     20% {
         color: #1abc9c;
     }
+
     30% {
         color: #d35400;
     }
+
     40% {
         color: blue;
     }
+
     50% {
         color: #34495e;
     }
-    
+
     60% {
         color: blue;
     }
+
     70% {
         color: #2980b9;
     }
+
     80% {
         color: #f1c40f;
     }
+
     90% {
         color: #2980b9;
     }
+
     100% {
         color: pink;
     }
@@ -1156,19 +1094,22 @@ button:hover, button:focus{
 
 
 /* Differentiating between links  */
-@media (max-width:990px){
-    .navbar-nav{
-        display:flex;
+@media (max-width:990px) {
+    .navbar-nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
     }
-    .borderBelow,.borderAbove{
+
+    .borderBelow,
+    .borderAbove {
         width: 100%;
-        display:inline-block;
-        border-top: 3px solid #007bff;;
-        margin:auto 0;
+        display: inline-block;
+        border-top: 3px solid #007bff;
+        ;
+        margin: auto 0;
     }
-    
+
 }
