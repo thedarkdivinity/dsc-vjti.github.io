@@ -422,12 +422,9 @@ button:hover, button:focus{
 #teamSection{
     position: relative;
 }
-#teamSection .container .nav-item:hover{
-    background-color:rgba(0, 110, 255, 0.4);
-    border-radius:5px;
-}
-#teamSection .container .nav-link:focus{
-    background-color:rgba(0, 110, 255, 0.4);
+
+#teamSection .container .nav-item a {
+    color: white;
 }
 
 #teamSection .container .ourCard{
