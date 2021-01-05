@@ -321,6 +321,7 @@ button:hover, button:focus{
 
 #technologiesSection{
     background-color: var(--backgroundGray);
+    position: relative;
 }
 
 #technologiesSection .box{
@@ -418,7 +419,9 @@ button:hover, button:focus{
 /**************************************************************
                     OUR TEAM PAGE STYLES
 **************************************************************/
-
+#teamSection{
+    position: relative;
+}
 #teamSection .container .nav-item:hover{
     background-color:rgba(0, 110, 255, 0.4);
     border-radius:5px;
