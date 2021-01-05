@@ -415,6 +415,27 @@ button:hover, button:focus{
     fill: #ECF0F1;
 }
 
+.custom-shape-divider-bottom-1609750485{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1609750485 svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 133px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1609750485 .shape-fill{
+    fill: #ECF0F1;
+}
 
 /**************************************************************
                     OUR TEAM PAGE STYLES
@@ -422,6 +443,7 @@ button:hover, button:focus{
 #teamSection{
     position: relative;
 }
+
 #teamSection .container .nav-item:hover{
     background-color:rgba(0, 110, 255, 0.4);
     border-radius:5px;
@@ -720,6 +742,65 @@ button:hover, button:focus{
 
 .custom-shape-divider-top-1609782702 .shape-fill {
     fill: #FFFFFF;
+}
+.custom-shape-divider-top-1609835329 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1609835329 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1609835329 .shape-fill {
+    fill: #ECF0F1;
+}
+.custom-shape-divider-top-1609835453 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1609835453 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1609835453 .shape-fill {
+    fill: #ECF0F1;
+}
+.custom-shape-divider-top-1609837161 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1609837161 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1609837161 .shape-fill {
+    fill: #ECF0F1;
 }
 .animate__shakeX{
     animation-duration: 2s;
