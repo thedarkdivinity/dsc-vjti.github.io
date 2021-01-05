@@ -877,7 +877,18 @@ button:hover, button:focus{
 		padding-bottom: 25px;
 	}
 
+    #technologiesSection, #teamSection{
+        margin-top: 30px;
+        padding-top: 50px;
+    }
+
+    #teamSection{
+        margin-top: 50px;
+        /*margin-bottom: 30px;*/
+    }
+
     #contactUsSection{
+        margin-top: 100px;
         padding: 40px 0;
     }
 
@@ -941,9 +952,15 @@ button:hover, button:focus{
         padding-bottom: 25px;
     }
 
+    #technologiesSection{
+        margin-top: 60px;
+    }
+
     #teamSection, #contactUsSection{
         padding: 40px 0;
+        margin-top: 80px;
     }
+
     #stats{
         position: relative;
     }
