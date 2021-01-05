@@ -444,12 +444,17 @@ button:hover, button:focus{
     position: relative;
 }
 
+<<<<<<< HEAD
 #teamSection .container .nav-item:hover{
     background-color:rgba(0, 110, 255, 0.4);
     border-radius:5px;
 }
 #teamSection .container .nav-link:focus{
     background-color:rgba(0, 110, 255, 0.4);
+=======
+#teamSection .container .nav-item a {
+    color: white;
+>>>>>>> 411356aa969962df35807c6d3a1f8fb4262c4f8e
 }
 
 #teamSection .container .ourCard{
@@ -1104,6 +1109,8 @@ button:hover, button:focus{
     	text-align: center;
     }
 }
+
+/* Active navbar class  */
 .active{
     -webkit-animation: colorTransition 20s infinite alternate;
     animation:  colorTransition 20s infinite alternate;
@@ -1148,3 +1155,20 @@ button:hover, button:focus{
 
 
 
+/* Differentiating between links  */
+@media (max-width:990px){
+    .navbar-nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .borderBelow,.borderAbove{
+        width: 100%;
+        display:inline-block;
+        border-top: 3px solid #007bff;;
+        margin:auto 0;
+    }
+    
+}
