@@ -1023,6 +1023,8 @@ button:hover, button:focus{
     	text-align: center;
     }
 }
+
+/* Active navbar class  */
 .active{
     -webkit-animation: colorTransition 20s infinite alternate;
     animation:  colorTransition 20s infinite alternate;
@@ -1067,3 +1069,18 @@ button:hover, button:focus{
 
 
 
+/* Differentiating between links  */
+@media (max-width:990px){
+    .navbar-nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .navbar-nav li{
+        width: 20%;
+        display:inline-block;
+        border-bottom: 3px solid #007bff;;
+    }
+}
