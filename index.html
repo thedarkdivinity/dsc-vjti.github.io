@@ -52,10 +52,10 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item borderBelow borderAbove my-1">
+              <!-- <li class="nav-item borderBelow borderAbove my-1">
                 <a class="nav-link active" aria-current="page" href="#aboutUsSection">Home</a>
-              </li>
-              <li class="nav-item borderBelow my-1">
+              </li> -->
+              <li class="nav-item borderBelow borderAbove my-1">
                 <a class="nav-link" aria-current="page" href="#aboutUsSection">About</a>
               </li>
 
@@ -106,7 +106,7 @@
 
     <div class="container container-row">
       <div class="row">
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12 d-xl-block d-lg-block d-none">
           <div id="content-container">
             <h2>
               Hello
@@ -251,6 +251,29 @@
             </svg>
           </div>
         </div>
+
+        <!-- FOR SMALLER DEVICES, IMAGE FIRST AND THEN THIS CONTENT -->
+        <div class="col-lg-6 col-12 d-xl-none d-lg-none">
+          <div id="content-container">
+            <h2>
+              Hello
+              <span class="txt-rotate" data-period="2000"
+                data-rotate='[ "Developers!", "Hackers!", "Programmers!", "Technophiles!" ]'></span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliqui.
+            </p>
+            <button type="button">
+              <a href="https://dsc.community.dev/veermata-jijabai-technological-institute/" target="__blank"
+                style="text-decoration: none; color: white">
+                Become A Member
+              </a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -333,7 +356,7 @@
     <div id="aboutVJTI">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-lg-block d-xl-block d-none">
             <h3 class="mt-5 sectional_heading">About VJTI</h3>
             <div class="aboutusRightPara">
               <p>
@@ -356,6 +379,27 @@
             <figure>
               <img src="college.svg" alt="college" />
             </figure>
+          </div>
+
+
+          <!-- FOR SMALLER DEVICES, IMAGE FIRST AND THEN THIS CONTENT -->
+          <div class="col-lg-6 d-lg-none d-xl-none">
+            <h3 class="mt-5 sectional_heading">About VJTI</h3>
+            <div class="aboutusRightPara">
+              <p>
+                We, at DSC VJTI, intend to build and enhance development
+                skills and knowledge of students. It's a club where we learn
+                and create amazing stuff together with other inquisitive
+                developers and exhilarate everyone to their core. Our motto is
+                to learn the necessary skills and collaborate and contribute
+                to building solutions for real-world problems. Located in
+                South Mumbai, VJTI is an autonomous institution owned by
+                Maharashtra State Government.
+              </p>
+            </div>
+            <button type="button">
+              <a href="#" style="text-decoration: none; color: white">Know More</a>
+            </button>
           </div>
         </div>
       </div>
@@ -441,7 +485,7 @@
       </svg>
     </div> -->
     <div class="container mt-5">
-      <h1 class="text-center heading mt-5">Technologies</h1>
+      <h1 class="text-center heading">Technologies</h1>
       <p class="subheading">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit
       </p>
@@ -566,9 +610,7 @@
       <br>
 
       <div class="container">
-        <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist"
-          style="border: 1px solid black; background: rgb(23,23,24); border-radius: 20px; padding: 5px 0 5px 0;
-                 background: linear-gradient(135deg, rgba(23,23,24,1) 16%, rgba(196,196,196,1) 74%, rgba(4,4,4,1) 97%);; color: white">
+        <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" id="lead-tab" data-toggle="tab" href="#lead" role="tab" aria-controls="lead"
               aria-selected="true">Lead</a>

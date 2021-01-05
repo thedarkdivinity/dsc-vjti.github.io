@@ -101,7 +101,7 @@ button:focus {
     bottom: 30px;
     right: 30px;
     transition: background-color .3s,
-        opacity .5s, visibility .5s;
+    opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
@@ -219,7 +219,7 @@ button:focus {
 
 .arrow {
     position: absolute;
-    top: 78%;
+    top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -339,6 +339,7 @@ button:focus {
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
+    margin-bottom: 25px;
     position: relative;
 }
 
@@ -430,8 +431,32 @@ button:focus {
     position: relative;
 }
 
-#teamSection .container .nav-item a {
-    color: white;
+#teamSection ul{
+    background:#fff;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+    border-radius: 50px;
+}
+
+#teamSection ul li a{
+    font-size: 0.93em;
+    font-weight: 600;
+    padding: 12px 20px;
+    color: var(--textBlack);
+}
+
+#teamSection ul.nav-pills .nav-link.active{
+    border-radius:50px;
+    transition-duration:ease 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: #05abe0;
+    background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+    background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+    background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+}
+
+#teamSection ul.nav-pills .nav-link.active{
+    color: var(--textWhite);
 }
 
 #teamSection .container .ourCard {
@@ -442,9 +467,10 @@ button:focus {
     background: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .15);
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 12px;
 }
 
 #teamSection .container .ourCard.blueContent:hover {
@@ -487,8 +513,8 @@ button:focus {
 
 #teamSection .container .ourCard .content .imgBx {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     /*border: 4px solid rgba(0,0,0,0.25);*/
@@ -888,24 +914,41 @@ button:focus {
         padding-bottom: 25px;
     }
 
+    #aboutUsSection{
+        padding-bottom: 0;
+    }
+
     #technologiesSection,
     #teamSection {
         margin-top: 30px;
         padding-top: 50px;
     }
 
+    #technologiesSection h1{
+        margin-top: 85px;
+    }
+
     #teamSection {
-        margin-top: 50px;
+        margin-top: 0px;
         /*margin-bottom: 30px;*/
     }
 
-    #contactUsSection {
-        margin-top: 100px;
-        padding: 40px 0;
+    #teamSection h1{
+        margin-top: 80px;
+    }
+
+    #teamSection ul{
+        margin-top: 0;
+    }
+
+    #contactUsSection{
+        margin-top: 80px;
+        padding-bottom: 40px;
     }
 
     #aboutUsSection #stats {
-        padding: 50px 0;
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
 
     #contactUsSection #contact {
@@ -938,21 +981,32 @@ button:focus {
     }
 
     #landingPageSection #bg-container {
-        margin-top: 60px;
+        margin-top: 90px;
+        height: 70%;
     }
 
     #landingPageSection #content-container {
-        margin-top: 130px;
+        margin-top: 20px;
+        /*margin-bottom: 80px;*/
         text-align: center;
     }
 
+    #landingPageSection{
+        height: 100vh;
+    }
     #landingPageSection #content-container button {
         margin: auto;
+        margin-top: 2px;
     }
 
     #button {
         right: -12px;
         bottom: 0px;
+    }
+
+    #aboutUsSection img{
+        margin-top: 30px;
+        height: 80%
     }
 
     #technologiesSection {
@@ -972,7 +1026,7 @@ button:focus {
     #teamSection,
     #contactUsSection {
         padding: 40px 0;
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     #stats {
@@ -980,7 +1034,7 @@ button:focus {
     }
 
     #aboutUsSection #stats {
-        padding: 40px 0;
+        padding-top: 40px;
     }
 
     .arrow {
@@ -999,6 +1053,10 @@ button:focus {
         padding-top: 20px;
     }
 
+    #aboutUsSection{
+        padding-bottom: 0px;
+    }
+
     #aboutUsSection button {
         margin: auto;
     }
@@ -1006,6 +1064,22 @@ button:focus {
     #aboutVJTI {
         margin-top: 40px;
         position: relative;
+    }
+
+    #teamSection{
+        margin-top: 0px;
+    }
+
+    #teamSection h1, #contactUsSection h1{
+        margin-top: 16px;
+    }
+
+    #teamSection ul li a{
+        font-size: 0.95em;
+    }
+
+    #contactUsSection{
+        padding-top: 0px;
     }
 
     #contactUsSection #contact {
@@ -1039,7 +1113,7 @@ button:focus {
 }
 
 /* Active navbar class  */
-.active {
+#landingPageSection .active {
     -webkit-animation: colorTransition 20s infinite alternate;
     animation: colorTransition 20s infinite alternate;
 }
@@ -1092,7 +1166,6 @@ button:focus {
 }
 
 
-
 /* Differentiating between links  */
 @media (max-width:990px) {
     .navbar-nav {
@@ -1108,7 +1181,6 @@ button:focus {
         width: 100%;
         display: inline-block;
         border-top: 3px solid #007bff;
-        ;
         margin: auto 0;
     }
 
