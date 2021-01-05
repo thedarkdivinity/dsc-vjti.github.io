@@ -1075,9 +1075,11 @@ button:hover, button:focus{
         justify-content: center;
         
     }
-    .navbar-nav li{
-        width: 20%;
+    .borderBelow,.borderAbove{
+        width: 100%;
         display:inline-block;
-        border-bottom: 3px solid #007bff;;
+        border-top: 3px solid #007bff;;
+        margin:auto 0;
     }
+    
 }
