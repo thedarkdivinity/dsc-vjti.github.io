@@ -296,11 +296,12 @@ button:focus {
 #aboutUsSection #stats {
     margin-top: 50px;
     background-color: var(--backgroundWhite);
+    background-image: url("assets/images/map.png");
     /*margin-bottom: 50px;*/
 }
 
 #aboutUsSection .statsCard {
-    background-color: var(--backgroundWhite);
+    background-color: rgba(255,255,255,0);
     text-align: center;
     padding: 10px;
     transition-duration: 0.4s;
@@ -918,19 +919,18 @@ button:focus {
         padding-bottom: 0;
     }
 
+    #aboutUsSection #stats{
+        padding: 100px 0;
+    }
+
     #technologiesSection,
     #teamSection {
-        margin-top: 30px;
+        margin-top: 0px;
         padding-top: 50px;
     }
 
     #technologiesSection h1{
         margin-top: 85px;
-    }
-
-    #teamSection {
-        margin-top: 0px;
-        /*margin-bottom: 30px;*/
     }
 
     #teamSection h1{
@@ -1009,6 +1009,10 @@ button:focus {
         height: 80%
     }
 
+    #aboutUsSection #stats{
+        padding: 50px 0;
+    }
+
     #technologiesSection {
         position: relative;
     }
@@ -1020,7 +1024,7 @@ button:focus {
     }
 
     #technologiesSection {
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     #teamSection,
