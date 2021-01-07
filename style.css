@@ -636,13 +636,13 @@ button:focus {
     /*padding: auto 40px;*/
 }
 
-#contactUsSection .social {
+#contactUsSection .social{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--backgroundWhite);
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(212,212,212,0.7);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #contactUsSection .social a:hover {
@@ -650,26 +650,39 @@ button:focus {
     transition: all ease 0.3s;
 }
 
-#contactUsSection .contact-box {
-    background-color: var(--backgroundDarkGray);
+#contactUsSection .contact-box{
+    background-color: var(--backgroundWhite);
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 30px;
-    box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .15);
 }
 
-#contactUsSection .c-heading h1 {
-    color: var(--textWhite);
+#contactUsSection .top-bar{
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--googleGreen);
+    border-radius: 0px 0px 10px 10px;
+}
+
+#contactUsSection .c-heading h1{
+    color: var(--textBlack);
     font-size: 2.8rem;
     font-weight: 600;
     margin: 0px;
     padding: 0px;
 }
 
-#contactUsSection .c-heading p {
-    color: var(--textWhite);
+#contactUsSection .c-heading p{
+    color: var(--textGray);
     font-size: 0.9rem;
     font-weight: 500;
     margin: 0px;
@@ -677,7 +690,7 @@ button:focus {
     text-align: center;
 }
 
-#contactUsSection .c-inputs {
+#contactUsSection .c-inputs{
     margin: 15px 0px;
     display: flex;
     flex-direction: column;
@@ -685,45 +698,47 @@ button:focus {
     align-items: center;
 }
 
-#contactUsSection .c-inputs input {
+#contactUsSection .c-inputs input{
     width: 330px;
     height: 45px;
     background-color: transparent;
     border-radius: 18px;
-    border: 1px solid rgba(251, 251, 251, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.9);
     outline: none;
     margin: 10px 0px;
     padding: 10px;
     box-sizing: border-box;
-    color: var(--textWhite);
+    color: var(--textBlack);
+    font-weight: 600;
     display: flex;
 }
 
-#contactUsSection .c-inputs textarea {
+#contactUsSection .c-inputs textarea{
     width: 330px;
     height: 200px !important;
     outline: none;
     background-color: transparent;
     border-radius: 18px;
-    border: 1px solid rgba(251, 251, 251, 0.1);
-    color: var(--textWhite);
+    border: 2px solid rgba(0,0,0, 0.9);
+    color: var(--textBlack);
+    font-weight: 600;
     padding: 10px;
     box-sizing: border-box;
 }
 
 #contactUsSection .c-inputs input:focus,
-#contactUsSection .c-inputs textarea:focus {
+#contactUsSection .c-inputs textarea:focus{
     border: 2px solid rgba(255, 255, 252, 1.00);
     transition: all ease 0.5s;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-#contactUsSection .c-inputs button {
+#contactUsSection .c-inputs button{
     width: 200px;
     height: 40px;
-    background-color: var(--backgroundWhite);
+    background-color: var(--googleGreen);
     border-radius: 99999px !important;
-    color: var(--textBlack);
+    color: var(--textWhite);
     border: none;
     outline: none;
     margin-top: 20px;
@@ -731,7 +746,7 @@ button:focus {
     margin-right: auto;
     align-items: center;
     /*border-radius: 10px;*/
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
 }
 
@@ -748,14 +763,14 @@ button:focus {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1609782702 svg {
+.custom-shape-divider-top-1609782702 svg{
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
 }
 
-.custom-shape-divider-top-1609782702 .shape-fill {
+.custom-shape-divider-top-1609782702 .shape-fill{
     fill: #FFFFFF;
 }
 
@@ -773,17 +788,29 @@ button:focus {
 
 #contactUsSection .c-inputs button:hover,
 #contactUsSection .c-inputs button:active {
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+    /*background-color: var(--buttonHover);*/
+    color: var(--textWhite);
+    box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
     transform: scale(1.02);
 }
 
-#contactUsSection .map {
+#contactUsSection .map{
     filter: grayscale(0.2);
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-    border: 4px solid grey;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-left: 2px; 
+    /*border: 4px solid grey;*/
 }
 
+/**************************************************************
+                    FAQs SECTION STYLES
+**************************************************************/
+#FAQsSection .qsn-container{
+    margin: 50px auto;
+}
 
+#FAQsSection .col-lg-6{
+    margin-bottom: 40px;
+}
 /**************************************************************
                     FOOTER SECTION STYLES
 **************************************************************/
@@ -1131,6 +1158,10 @@ button:focus {
     #contactUsSection .c-inputs input,
     #contactUsSection .c-inputs textarea {
         width: 270px;
+    }
+
+    #FAQsSection .col-lg-6{
+        text-align: center;
     }
 
     #footerSection .footer-distributed h4 {
