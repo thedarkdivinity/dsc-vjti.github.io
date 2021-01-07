@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 :root {
     /* BACKGROUND COLORS */
     --backgroundGray: #FAFAFA;
@@ -23,7 +25,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Product Sans", sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: 16px;
     box-sizing: border-box;
 }
@@ -163,7 +165,7 @@ button:focus {
 
 #landingPageSection #header nav a {
     font-size: 0.93em;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     padding: 10px 15px;
     text-align: center;
@@ -280,7 +282,7 @@ button:focus {
 #aboutUsSection .aboutusRightPara {
     margin-top: 14px;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5em;
     letter-spacing: -0.1px;
     color: var(--textGray);
@@ -312,7 +314,8 @@ button:focus {
 #aboutUsSection .statsCard p {
     line-height: 1.5em;
     color: var(--textGray);
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight: 600;
     letter-spacing: -0.1px;
 }
 
@@ -795,7 +798,7 @@ button:focus {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
-    font-weight: 600;
+    font-weight: 700;
     padding: 20px 10px;
     /*margin-top: 80px;*/
 }
@@ -978,6 +981,29 @@ button:focus {
 @media (max-width: 991px) {
     * {
         font-size: 15px;
+    }
+
+    /* Differentiating between links  */
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .borderAbove{
+        width: 100%;
+        display: inline-block;
+        border-top: 3px solid #007bff;
+        margin: auto 0;
+    }
+
+    .borderBelow{
+        width: 100%;
+        display: inline-block;
+        border-bottom: 3px solid #007bff;
+        margin: auto 0;
     }
 
     #landingPageSection #bg-container {
@@ -1165,27 +1191,6 @@ button:focus {
 
     100% {
         color: pink;
-    }
-
-}
-
-
-/* Differentiating between links  */
-@media (max-width:990px) {
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .borderBelow,
-    .borderAbove {
-        width: 100%;
-        display: inline-block;
-        border-top: 3px solid #007bff;
-        margin: auto 0;
     }
 
 }
