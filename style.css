@@ -480,7 +480,7 @@ button:focus {
 }
 
 #teamSection .container .ourCard.redContent:hover {
-    background-color: var(--googleGreen);
+    background-color: var(--googleRed);
     box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
 }
 
@@ -490,7 +490,7 @@ button:focus {
 }
 
 #teamSection .container .ourCard.greenContent:hover {
-    background-color: var(--googleRed);
+    background-color: var(--googleGreen);
     box-shadow: 2px 2px 30px rgba(4, 15, 49, 0.08);
 }
 
@@ -514,8 +514,8 @@ button:focus {
 
 #teamSection .container .ourCard .content .imgBx {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     overflow: hidden;
     /*border: 4px solid rgba(0,0,0,0.25);*/
@@ -526,11 +526,11 @@ button:focus {
 }
 
 #teamSection .container .ourCard .content .imgBx.redIcon {
-    background-color: var(--googleGreen);
+    background-color: var(--googleRed);
 }
 
 #teamSection .container .ourCard .content .imgBx.greenIcon {
-    background-color: var(--googleRed);
+    background-color: var(--googleGreen);
 }
 
 #teamSection .container .ourCard .content .imgBx.yellowIcon {
@@ -551,10 +551,10 @@ button:focus {
 }
 
 #teamSection .container .ourCard .content .contentBx h3 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: initial;
+    letter-spacing: 0.1px;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center;
     margin: 20px 0 10px;
     line-height: 1.1em;
@@ -583,14 +583,14 @@ button:focus {
 #teamSection .container .ourCard .greenLinks a {
     text-decoration: none;
     font-size: 1.3em;
-    color: var(--googleRed);
+    color: var(--googleGreen);
     padding: 0 5px;
 }
 
 #teamSection .container .ourCard .redLinks a {
     text-decoration: none;
     font-size: 1.3em;
-    color: var(--googleGreen);
+    color: var(--googleRed);
     padding: 0 5px;
 }
 
