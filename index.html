@@ -39,7 +39,10 @@
     
 </head>
 
-<body>
+<body onload="loaderFunction()">
+ <div id="loading">
+
+ </div>
   <!-- <a name="top"></a> -->
   <section id="landingPageSection">
     <header id="header">
@@ -1366,7 +1369,12 @@
     });
   </script>
   <script>AOS.init();</script>
-
+<script>
+  var preloader=document.getElementById('loading');
+  const loaderFunction=()=>{
+    preloader.style.display='none';
+  }
+</script>
 </body>
 
 </html>
