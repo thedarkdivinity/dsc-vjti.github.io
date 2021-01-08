@@ -811,6 +811,23 @@ button:focus {
 #FAQsSection .col-lg-6{
     margin-bottom: 40px;
 }
+
+#FAQsSection .sectional_heading{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--textBlack);
+    line-height: 22px;
+    /*margin-bottom: 18px;*/
+}
+
+#FAQsSection .col-lg-6 p{
+    /*margin-top: 14px;*/
+    font-size: 0.94em;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: -0.1px;
+    color: var(--textGray);
+}
 /**************************************************************
                     FOOTER SECTION STYLES
 **************************************************************/
@@ -989,6 +1006,10 @@ button:focus {
         margin: auto;
         margin-right: 1cm;
         margin-top: 0.6cm;
+    }
+
+    #footerSection .footer-distributed img{
+        margin-top: -14px;
     }
 
     #footerSection .footer-distributed .footer-logo {
