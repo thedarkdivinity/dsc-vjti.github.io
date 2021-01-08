@@ -1263,6 +1263,8 @@ button:focus {
     }
 
 }
+
+/* Animating SVG in Home Page */
 .glowBlue{
     animation: glowBlue 0.5s  0s infinite alternate-reverse ease-in-out;
 }
@@ -1275,7 +1277,7 @@ button:focus {
     }
 }
 .glowGreen{
-    animation: glowGreen 0.3s  0.7s infinite alternate-reverse ease-in-out;
+    animation: glowGreen 0.5s  0.7s infinite alternate-reverse ease-in-out;
 }
 @keyframes glowGreen{
     0%{
@@ -1286,7 +1288,7 @@ button:focus {
     }
 }
 .glowYellow{
-    animation: glowYellow 0.4s  1.3s infinite alternate-reverse ease-in-out;
+    animation: glowYellow 0.5s  1.3s infinite alternate-reverse ease-in-out;
 }
 @keyframes glowYellow{
     0%{
@@ -1297,7 +1299,7 @@ button:focus {
     }
 }
 .glowRed{
-    animation: glowRed 0.7s  2s infinite alternate-reverse ease-in-out;
+    animation: glowRed 0.5s  2s infinite alternate-reverse ease-in-out;
 }
 @keyframes glowRed{
     0%{
