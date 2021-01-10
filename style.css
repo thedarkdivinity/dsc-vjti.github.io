@@ -128,8 +128,8 @@ z-index: 999999999999999999999999999999999999999999;
 }
 
 #button::after {
-    content: "\f077";
-    font-family: FontAwesome;
+    content: "";
+    /*font-family: FontAwesome;*/
     font-weight: normal;
     font-style: normal;
     font-size: 2em;
@@ -140,7 +140,7 @@ z-index: 999999999999999999999999999999999999999999;
 #button:hover {
     cursor: pointer;
     text-decoration: none;
-    background-color: #c2b9ad;
+    background-color: #555;
 }
 
 #button:active {
@@ -720,7 +720,7 @@ z-index: 999999999999999999999999999999999999999999;
 }
 
 #contactUsSection .c-inputs input{
-    width: 290px;
+    width: 330px;
     height: 45px;
     background-color: transparent;
     border-radius: 18px;
@@ -735,7 +735,7 @@ z-index: 999999999999999999999999999999999999999999;
 }
 
 #contactUsSection .c-inputs textarea{
-    width: 290px;
+    width: 330px;
     height: 200px !important;
     outline: none;
     background-color: transparent;
@@ -864,7 +864,7 @@ z-index: 999999999999999999999999999999999999999999;
     box-sizing: border-box;
     width: 100%;
     font-weight: 700;
-    padding: 10px 10px;
+    padding: 10px 16px;
     /*margin-top: 80px;*/
 }
 
@@ -952,15 +952,9 @@ z-index: 999999999999999999999999999999999999999999;
 }
 
 /**************************************************************
-                    CHANGES FOR DESKTOP VIEW
+                    CHANGES FOR SMALLER LAPTOPS VIEW
 **************************************************************/
-@media(max-width:1000px){
-    #contact{
-        width: 80%;
-    }
-
-}
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1024px){
     #landingPageSection {
         height: 100vh;
     }
@@ -971,11 +965,19 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #landingPageSection #content-container {
-        margin-top: 50%;
+        margin-top: 40%;
     }
 
-    #landingPageSection #bg-container {
-        margin-top: 30%;
+    #landingPageSection #bg-container{
+        margin-top: 20%;
+    }
+
+    .arrow{
+        top: 87%;
+    }
+
+    #button{
+        right: 16px;
     }
 
     #aboutDSC {
@@ -1026,21 +1028,26 @@ z-index: 999999999999999999999999999999999999999999;
         padding-bottom: 40px;
     }
 
-    #aboutUsSection #stats {
+    #aboutUsSection #stats{
         padding-top: 50px;
         padding-bottom: 40px;
     }
 
-    #contactUsSection #contact {
+    #contactUsSection #contact{
         justify-content: center;
     }
 
-    #contactUsSection video{
-        height:450px;
-        /*width: 650px;*/
+    #contactUsSection .c-inputs input,
+    #contactUsSection .c-inputs textarea{
+        width: 250px;
     }
 
-    .footer-distributed .footer-right {
+    #contactUsSection video{
+        height:600px;
+        width: 630px;
+    }
+
+    .footer-distributed .footer-right{
         margin: auto;
         margin-right: 1cm;
         margin-top: 0.6cm;
@@ -1050,29 +1057,121 @@ z-index: 999999999999999999999999999999999999999999;
         margin-top: -14px;
     }
 
-    #footerSection .footer-distributed .footer-logo {
+    #footerSection .footer-distributed .footer-logo{
         margin: auto;
     }
 
-    #footerSection .footer-distributed .address {
-        padding-left: 50px;
+    #footerSection .footer-distributed .address{
+        padding-left: 30px;
+    }
+
+    #FAQsSection{
+        height: 100vh;
     }
 }
 
 
 /**************************************************************
-                    CHANGES FOR SMALLER LAPTOPS VIEW
+                    CHANGES FOR LARGER LAPTOPS VIEW
 **************************************************************/
-@media (max-width: 1024px){
-    #contactUsSection .c-inputs input,
-    #contactUsSection .c-inputs textarea {
-        width: 250px;
+@media (min-width: 1025px){
+    #landingPageSection {
+        height: 100vh;
+    }
+
+    #landingPageSection .navbar img{
+        width: 300px;
+        height: 50px;
+    }
+
+    #landingPageSection #content-container {
+        margin-top: 47%;
+    }
+
+    #landingPageSection #bg-container {
+        margin-top: 25%;
+        width: 100%;
+    }
+
+    #aboutDSC {
+        height: 70vh;
+    }
+
+    #aboutVJTI {
+        height: 60vh;
+    }
+
+    #aboutUsSection,
+    #technologiesSection,
+    #teamSection {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #aboutUsSection{
+        padding-bottom: 0;
+    }
+
+    #aboutUsSection #stats{
+        padding: 100px 0;
+    }
+
+    #technologiesSection,
+    #teamSection {
+        margin-top: 0px;
+        padding-top: 50px;
+    }
+
+    #technologiesSection h1{
+        margin-top: 85px;
+    }
+
+    #teamSection h1{
+        margin-top: 80px;
+    }
+
+    #teamSection ul{
+        margin-top: 0;
+    }
+
+    #contactUsSection{
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+    }
+
+    #aboutUsSection #stats{
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    #contactUsSection #contact{
+        justify-content: center;
     }
 
     #contactUsSection video{
-        height:480px;
-        width: 620px;
+        height:450px;
+        /*width: 650px;*/
     }
+
+    #footerSection .footer-distributed img{
+        margin-top: -14px;
+    }
+
+    #footerSection .footer-distributed .footer-logo{
+        margin: auto;
+        padding-left: 25px;
+    }
+
+    #footerSection .footer-distributed .address{
+        padding-left: 30px;
+    }
+
+    #FAQsSection{
+        height: 100vh;
+    }
+
 }
 
 /**************************************************************
