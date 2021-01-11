@@ -320,7 +320,7 @@ z-index: 999999999999999999999999999999999999999999;
 #aboutUsSection #stats {
     margin-top: 50px;
     background-color: var(--backgroundWhite);
-    background-image: url("assets/images/map.png");
+    background-image: url("assets/images/map.webp");
     background-size: contain;
     /*margin-bottom: 50px;*/
 }
