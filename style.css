@@ -1211,6 +1211,11 @@ z-index: 999999999999999999999999999999999999999999;
         visibility: hidden;
     }
 
+    #loading{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     #aboutUsSection img{
         margin-top: 30px;
         height: 80%
