@@ -212,7 +212,7 @@ z-index: 999999999999999999999999999999999999999999;
     box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
 }
 
-#landingPageSection #content-container h2 {
+#landingPageSection #content-container h2{
     color: var(--textBlack);
     font-weight: 700;
     font-size: 3em;
@@ -317,6 +317,7 @@ z-index: 999999999999999999999999999999999999999999;
     margin-top: 50px;
     background-color: var(--backgroundWhite);
     background-image: url("assets/images/map.png");
+    background-size: contain;
     /*margin-bottom: 50px;*/
 }
 
@@ -1043,8 +1044,8 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #contactUsSection video{
-        height:600px;
-        width: 630px;
+        height:550px;
+        width: 590px;
     }
 
     .footer-distributed .footer-right{
@@ -1151,7 +1152,7 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #contactUsSection video{
-        height:450px;
+        height:430px;
         /*width: 650px;*/
     }
 
@@ -1233,6 +1234,10 @@ z-index: 999999999999999999999999999999999999999999;
     #button {
         right: -12px;
         bottom: 0px;
+    }
+
+    .arrow{
+        visibility: hidden;
     }
 
     #aboutUsSection img{
