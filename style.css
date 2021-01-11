@@ -428,29 +428,6 @@ z-index: 999999999999999999999999999999999999999999;
     position: relative;
 }
 
-/* .custom-shape-divider-bottom-1609750485 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1609750485 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 133px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1609750485 .shape-fill {
-    fill: #ECF0F1;
-}
- */
-
 /**************************************************************
                     OUR TEAM PAGE STYLES
 **************************************************************/
@@ -776,10 +753,6 @@ z-index: 999999999999999999999999999999999999999999;
     letter-spacing: 1px;
 }
 
-/* 
-.material-icons{
-    margin-left: 10px;
-} */
 /* ARROW DEPRESSION */
 .custom-shape-divider-top-1609782702 {
     position: absolute;
@@ -856,6 +829,8 @@ z-index: 999999999999999999999999999999999999999999;
     letter-spacing: -0.1px;
     color: var(--textGray);
 }
+
+
 /**************************************************************
                     FOOTER SECTION STYLES
 **************************************************************/
@@ -958,9 +933,11 @@ z-index: 999999999999999999999999999999999999999999;
     border-radius: 2px;
 }
 
+
 /**************************************************************
                     CHANGES FOR SMALLER LAPTOPS VIEW
 **************************************************************/
+
 @media (min-width: 992px) and (max-width: 1024px){
     #landingPageSection {
         height: 100vh;
@@ -1081,6 +1058,7 @@ z-index: 999999999999999999999999999999999999999999;
 /**************************************************************
                     CHANGES FOR LARGER LAPTOPS VIEW
 **************************************************************/
+
 @media (min-width: 1025px){
     #landingPageSection {
         height: 100vh;
@@ -1181,6 +1159,7 @@ z-index: 999999999999999999999999999999999999999999;
 
 }
 
+
 /**************************************************************
                     CHANGES FOR MOBILE VIEW
 **************************************************************/
@@ -1198,20 +1177,6 @@ z-index: 999999999999999999999999999999999999999999;
         justify-content: center;
 
     }
-
-    /*.borderAbove{
-        width: 100%;
-        display: inline-block;
-        border-top: 3px solid #007bff;
-        margin: auto 0;
-    }*/
-
-    /*.borderBelow{
-        width: 30%;
-        display: inline-block;
-        border-bottom: 3px solid #007bff;
-        margin: auto 0;
-    }*/
 
     #landingPageSection .navbar img{
         width: 198px;
