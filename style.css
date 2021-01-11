@@ -1232,8 +1232,8 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #button {
-        right: -12px;
-        bottom: 0px;
+        right: 12px;
+        bottom: 12px;
     }
 
     .arrow{
