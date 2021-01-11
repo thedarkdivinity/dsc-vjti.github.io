@@ -1451,3 +1451,10 @@ z-index: 999999999999999999999999999999999999999999;
     }
 } 
 
+@media(max-width:670px) {
+    #contact{
+        display: grid !important;
+        place-items: center;
+        margin-top: var(--marginTop);
+    }
+}
