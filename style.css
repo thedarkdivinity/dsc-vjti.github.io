@@ -112,11 +112,14 @@ z-index: 999999999999999999999999999999999999999999;
 
 #button {
     display: inline-block;
+   
     background-color: #6e6860;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    padding: 7px;
     text-align: center;
-    border-radius: 4px;
+    
+    border-radius: 100%;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -171,6 +174,7 @@ z-index: 999999999999999999999999999999999999999999;
 }
 
 #landingPageSection #header.sticky {
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     -moz-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
@@ -424,7 +428,7 @@ z-index: 999999999999999999999999999999999999999999;
     position: relative;
 }
 
-.custom-shape-divider-bottom-1609750485 {
+/* .custom-shape-divider-bottom-1609750485 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -445,7 +449,7 @@ z-index: 999999999999999999999999999999999999999999;
 .custom-shape-divider-bottom-1609750485 .shape-fill {
     fill: #ECF0F1;
 }
-
+ */
 
 /**************************************************************
                     OUR TEAM PAGE STYLES
@@ -776,6 +780,7 @@ z-index: 999999999999999999999999999999999999999999;
 .material-icons{
     margin-left: 10px;
 } */
+/* ARROW DEPRESSION */
 .custom-shape-divider-top-1609782702 {
     position: absolute;
     top: 0;
@@ -807,6 +812,7 @@ z-index: 999999999999999999999999999999999999999999;
     animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-iteration-count: infinite;
 }
+
 
 #contactUsSection .c-inputs button:hover,
 #contactUsSection .c-inputs button:active {
