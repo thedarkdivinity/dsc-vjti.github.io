@@ -30,7 +30,7 @@
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-
+<script src="ns.js"></script>
   </head>
 
   <body>
@@ -1143,7 +1143,7 @@
                   class="fa fa-calendar"
                   style="border: 8px solid var(--googleBlue)"
                 ></i>
-                <h1 class="heading count">15</h1>
+                <h1 class="heading numscroller" data-min='1' data-max='15' data-delay='5' data-increment='2'>15</h1>
                 <p>Workshops</p>
               </div>
             </div>
@@ -1161,7 +1161,8 @@
                     padding: 20px 23px;
                   "
                 ></i>
-                <h1 class="heading count">25</h1>
+                
+                <h1 class="heading numscroller" data-min='1' data-max='25' data-delay='5' data-increment='2'>25</h1>
                 <p>Members</p>
               </div>
             </div>
@@ -1176,7 +1177,7 @@
                   class="fa fa-code"
                   style="border: 8px solid var(--googleYellow)"
                 ></i>
-                <h1 class="heading count">15</h1>
+                <h1 class="heading numscroller" data-min='1' data-max='15' data-delay='5' data-increment='2'>15</h1>
                 <p>Tech Stacks</p>
               </div>
             </div>
@@ -1191,7 +1192,9 @@
                   class="fa fa-users"
                   style="border: 8px solid var(--googleRed)"
                 ></i>
-                <h1 class="heading count">35</h1>
+                <h1 class="heading numscroller" data-min='1' data-max='35' data-delay='5' data-increment='2'>35</h1>
+
+                <!-- <h1 class="heading count">35</h1> -->
                 <p>Participants</p>
               </div>
             </div>
@@ -2682,23 +2685,9 @@
     <!-- Customised JS -->
     <script type="text/javascript" src="script.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
-      crossorigin="anonymous"
-    ></script>
 
     <!-- Counter JS -->
-    <script>
-      jQuery(document).ready(function ($) {
-        $(".count").counterUp({
-          delay: 1,
-          time: 500,
-        });
-      });
-    </script>
-
+    
     <!-- Nav Links JS -->
     <script type="text/javascript">
       $(document).ready(function () {
