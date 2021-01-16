@@ -1380,6 +1380,10 @@ z-index: 999999999999999999999999999999999999999999;
     #footerSection .footer-distributed {
         text-align: center;
     }
+
+    #footerSection #partition{
+        visibility: hidden;
+    }
 }
 
 /* Active navbar class  */
