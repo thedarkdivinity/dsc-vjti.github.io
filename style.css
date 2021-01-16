@@ -753,6 +753,60 @@ z-index: 999999999999999999999999999999999999999999;
     letter-spacing: 1px;
 }
 
+#contactUsSection .question{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--textBlack);
+}
+
+#contactUsSection .answer{
+    font-size: 0.93em;
+    font-weight: 500;
+    line-height: 1.3em;
+    letter-spacing: -0.1px;
+    color: var(--textGray);
+}
+
+#contactUsSection .join-slack-button{
+    margin-top: 10px;
+    background: #481449;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: var(--textWhite);
+    border: none;
+    font-size: 1em;
+    letter-spacing: 0.8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    display: block;
+    text-align: center;
+    border-radius: 2px !important;
+    font-weight: bold !important;
+}
+
+#contactUsSection .join-yt-button{
+    margin-top: 10px;
+    background: #e60000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: var(--textWhite);
+    border: none;
+    font-size: 1em;
+    letter-spacing: 0.8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    display: block;
+    text-align: center;
+    border-radius: 2px !important;
+    font-weight: bold !important;
+} 
+
 /* ARROW DEPRESSION */
 .custom-shape-divider-top-1609782702 {
     position: absolute;
@@ -944,7 +998,7 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #landingPageSection .navbar img{
-        width: 300px;
+        width: 330px;
         height: 50px;
     }
 
@@ -1065,7 +1119,7 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #landingPageSection .navbar img{
-        width: 300px;
+        width: 330px;
         height: 50px;
     }
 
@@ -1237,6 +1291,21 @@ z-index: 999999999999999999999999999999999999999999;
 
     #technologiesSection {
         margin-top: 0px;
+    }
+
+    #contactUsSection .join-us{
+        text-align: center;
+        /*margin-top: 20px;*/
+    }
+
+    .join-yt-button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .join-slack-button{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #teamSection,
