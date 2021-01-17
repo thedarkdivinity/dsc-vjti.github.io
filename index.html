@@ -1136,7 +1136,7 @@
                   "
                 ></i>
                 
-                <h1 class="heading numscroller" data-min='1' data-max='25' data-delay='5' data-increment='2'>25</h1>
+                <h1 class="heading numscroller" data-min='1' data-max='25' data-delay='5' data-increment='2'>25+</h1><span>
                 <p>Members</p>
               </div>
             </div>
@@ -2672,6 +2672,13 @@
           });
           event.preventDefault();
         });
+        $(function(){ 
+     var navMain = $(".navbar-collapse");
+
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+ });
         $(window).scroll(function () {
           container_RowTop = $(this).offset().top;
           if ($(document).scrollTop() > container_RowTop) {
