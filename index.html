@@ -2388,10 +2388,10 @@
             </div>
 
             <div class="c-inputs">
-              <form>
-                <input type="text" placeholder="Your Name" />
-                <input type="email" placeholder="Your Email" />
-                <textarea name="message" placeholder="Your Message"></textarea>
+              <form name="contact" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email"  name="email"/>
+                <textarea name="message" placeholder="Your Message" name="message"></textarea>
 
                 <button type="submit" class="contactSubmit">
                   SUBMIT
