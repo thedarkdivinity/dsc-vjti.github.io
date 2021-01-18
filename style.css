@@ -449,7 +449,7 @@ z-index: 999999999999999999999999999999999999999999;
     padding: 12px 20px;
     color: var(--textBlack);
 }
-`
+
 #teamSection ul.nav-pills .nav-link.active{
     border-radius:50px;
     transition-duration:ease 0.6s;
