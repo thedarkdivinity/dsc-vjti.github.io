@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
-
 :root {
     /* BACKGROUND COLORS */
     --backgroundGray: #FAFAFA;
@@ -20,7 +18,9 @@
 
 @font-face{
     font-family: 'Google Sans';
-    src: url('assets/fonts/GoogleSans-Regular-v1.27.51134713.ttf') format('truetype');
+    src: url('assets/fonts/GoogleSans-Regular-v1.27.51134713.ttf') format('truetype'),
+        url('assets/fonts/GoogleSans-Regular-v1.27.51134713.woff') format('woff'),
+        url('assets/fonts/GoogleSans-Regular-v1.27.51134713.otf') format('opentype');
 }
 /**************************************************************
                     COMMON STYLES
@@ -833,46 +833,6 @@ z-index: 999999999999999999999999999999999999999999;
     color: var(--textGray);
 }
 
-#FAQsSection .join-slack-button{
-    margin-top: 10px;
-    background: #481449;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    color: var(--textWhite);
-    border: none;
-    font-size: 1em;
-    letter-spacing: 0.8px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: inline-block;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    display: block;
-    text-align: center;
-    border-radius: 2px !important;
-    font-weight: bold !important;
-}
-
-#FAQsSection .join-yt-button{
-    margin-top: 10px;
-    background: #e60000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    color: var(--textWhite);
-    border: none;
-    font-size: 1em;
-    letter-spacing: 0.8px;
-    padding: 12px 20px;
-    cursor: pointer;
-    display: inline-block;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    display: block;
-    text-align: center;
-    border-radius: 2px !important;
-    font-weight: bold !important;
-}
-
 /**************************************************************
                     FOOTER SECTION STYLES
 **************************************************************/
@@ -991,11 +951,11 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #landingPageSection #content-container {
-        margin-top: 40%;
+        margin-top: 43%;
     }
 
     #landingPageSection #bg-container{
-        margin-top: 20%;
+        margin-top: 23%;
     }
 
     .arrow{
@@ -1112,11 +1072,11 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #landingPageSection #content-container {
-        margin-top: 47%;
+        margin-top: 49%;
     }
 
     #landingPageSection #bg-container {
-        margin-top: 25%;
+        margin-top: 27%;
         width: 100%;
     }
 
@@ -1236,7 +1196,8 @@ z-index: 999999999999999999999999999999999999999999;
     }
 
     #landingPageSection{
-        height: 100vh;
+        /*height: 100vh;*/
+        margin-bottom: 30px;
     }
 
     #landingPageSection #content-container button {
